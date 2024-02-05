@@ -4,6 +4,7 @@ import { ProtectedRoutes } from "./features/authentication/ProtectedRoutes";
 import DashBoard from "./pages/DashBoard";
 import Auth from "./pages/Auth";
 import Register from "./pages/Register";
+import { Toaster } from "@/components/ui/toaster";
 
 const queryClient = new QueryClient({
 	defaultOptions: {
@@ -25,6 +26,7 @@ function App() {
 					<Route path="/register" element={<Register />} />
 				</Routes>
 			</BrowserRouter>
+			<Toaster />
 		</QueryClientProvider>
 	);
 }
