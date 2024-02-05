@@ -11,7 +11,7 @@ export default function Register() {
 
 	function handleGoogleLogin() {
 		window.open(
-			`${import.meta.env.VITE_AUTH_URL}/auth/google`,
+			`${import.meta.env.VITE_AUTH_URL}/users/auth/google`,
 			"_self",
 			"width-500, height=600"
 		);

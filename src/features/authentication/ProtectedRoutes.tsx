@@ -5,29 +5,19 @@ const UserContext = React.createContext({});
 
 const ProtectedRoutes = () => {
 	const navigate = useNavigate();
-	const { isLoading, user } = useUser();
+	const { isLoading, user, isAuthenticated, redirectUrl } = useUser();
 
 	useEffect(() => {
-		if (!isLoading) {
-			if (!user) {
-				navigate("/auth");
-			} else {
-				if (user.success === false) {
-					if (user.message_code === "GOOGLE_LOGIN_REQUIRED") {
-						navigate("/auth");
-					} else if (user.message_code === "USER_NOT_FOUND") {
-						navigate("/register");
-					}
-				}
-			}
+		if (!isLoading && !isAuthenticated) {
+			navigate(redirectUrl);
 		}
-	}, [isLoading, navigate, user]);
+	}, [isLoading, navigate, redirectUrl, isAuthenticated]);
 
 	if (isLoading) {
 		return <div>Loading...</div>;
 	}
 
-	if (!isLoading && user.success === true)
+	if (!isLoading && isAuthenticated)
 		return (
 			<UserContext.Provider value={user}>
 				<Outlet />

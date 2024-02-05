@@ -1,7 +1,7 @@
 export default function Auth() {
 	function handleGoogleLogin() {
 		window.open(
-			`${import.meta.env.VITE_API_URL}/auth/google`,
+			`${import.meta.env.VITE_API_URL}/users/auth/google`,
 			"_self",
 			"width-500, height=600"
 		);
