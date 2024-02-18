@@ -5,6 +5,7 @@ import DashBoard from "./pages/DashBoard";
 import Auth from "./pages/Auth";
 import Register from "./pages/Register";
 import { Toaster } from "@/components/ui/toaster";
+import Home from "./pages/Home/Home";
 
 const queryClient = new QueryClient({
 	defaultOptions: {
@@ -20,7 +21,7 @@ function App() {
 			<BrowserRouter>
 				<Routes>
 					<Route element={<ProtectedRoutes />}>
-						<Route path="/" element={<DashBoard />} />
+						<Route path="/" element={<Home />} />
 					</Route>
 					<Route path="/auth" element={<Auth />} />
 					<Route path="/register" element={<Register />} />
