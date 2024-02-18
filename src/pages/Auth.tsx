@@ -10,7 +10,7 @@ export default function Auth() {
 	return (
 		<div className="w-full h-full flex items-center justify-center">
 			<button
-				className=" px-4 py-2 shadow-inner shadow-md shadow-emerald-300 text-white font-semibold transition-all duration-500 active:bg-green-400"
+				className=" px-4 py-2 shadow-inner  shadow-emerald-300 text-white font-semibold transition-all duration-500 active:bg-green-400"
 				onClick={handleGoogleLogin}
 			>
 				<img src="/7123025_logo_google_g_icon.svg" />
