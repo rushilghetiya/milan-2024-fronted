@@ -20,9 +20,9 @@ export default function Register() {
 	const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 		const data = {
-			is_srm_student: isSrmStudent,
+			is_srm_ktr: isSrmStudent,
 			college_name: collegeName,
-			phone_number: phoneNumber,
+			phone_number: Number(phoneNumber),
 			reg_number: registerNumber,
 		};
 
@@ -50,7 +50,7 @@ export default function Register() {
 				/>
 				<input
 					disabled={isLoading}
-					type="number"
+					type="text"
 					placeholder="Phone Number"
 					value={phoneNumber}
 					onChange={(e) => {

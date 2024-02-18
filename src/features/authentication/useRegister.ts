@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 
 export interface UserRegisterProps {
 	reg_number: string;
-	phone_number: string;
-	is_srm_student: boolean;
+	phone_number: number;
+	is_srm_ktr: boolean;
 	college_name: string;
 }
 
