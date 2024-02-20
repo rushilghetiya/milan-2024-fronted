@@ -1,0 +1,8 @@
+
+
+.eventContainer{
+    background-image: url("@/assets/images/eventBg-4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
