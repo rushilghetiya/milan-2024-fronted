@@ -8,3 +8,4 @@ export const registerUserApi = `${VAR}/users/auth/register`;
 // events api
 
 export const registerForEventApi = `${VAR}/api/events/register`;
+export const getEventByUserApi = `${VAR}/api/events/getEvent`;

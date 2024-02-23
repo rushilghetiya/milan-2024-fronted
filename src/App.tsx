@@ -20,8 +20,8 @@ const queryClient = new QueryClient({
 
 function App() {
 	return (
+		<BrowserRouter>
 		<QueryClientProvider client={queryClient}>
-			<BrowserRouter>
 				<Routes>
 					<Route element={<ProtectedRoutes />}>
 						<Route path="/" element={<Home />} />
@@ -32,9 +32,9 @@ function App() {
 					<Route path="/event/:name" element={<EventContainer/>} />
 					<Route path="/event/music/:id" element={<MusicEventPage/>}/>
 				</Routes>
-			</BrowserRouter>
-			<Toaster />
+		<Toaster />
 		</QueryClientProvider>
+			</BrowserRouter>
 	);
 }
 
