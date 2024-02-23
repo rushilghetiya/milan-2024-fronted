@@ -1,7 +1,9 @@
 import { getCurrentUser } from "@/services/apiUsers";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
+import { useNavigate } from "react-router-dom";
 
 const useUser = () => {
+	const navigate = useNavigate();
 	const queryClient = useQueryClient();
 
 	const { isLoading, data } = useQuery({
@@ -17,12 +19,12 @@ const useUser = () => {
 	} else {
 		if (data.success === false) {
 			if (data.message_code === "GOOGLE_LOGIN_REQUIRED") {
-				redirectUrl = "/auth";
+				navigate("/auth")
 			} else if (data.message_code === "USER_NOT_FOUND") {
-				redirectUrl = "/register";
+				navigate("/register")
 			}
 		} else {
-			queryClient.setQueryData(["user"], data?.data?.user);
+			queryClient.setQueryData(["user"], data);
 			isAuthenticated = true;
 		}
 	}

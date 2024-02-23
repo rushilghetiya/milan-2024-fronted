@@ -5,8 +5,16 @@ import "./Event.css";
 import { eventData } from "../../DataList/events";
 import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom";
+// import { useQueryClient } from "react-query";
 
 function Event() {
+// const queryClient = useQueryClient();
+//  React.useEffect(() => {
+//   queryClient.invalidateQueries("eventCodeOfUser");
+
+//  },[]);
+ 
+
   return (
     <div className="eventContainer w-screen h-screen relative ">
       <div className="absolute h-screen w-screen bg-black/30 z-[0] "></div>

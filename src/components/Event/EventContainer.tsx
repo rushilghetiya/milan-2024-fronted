@@ -11,7 +11,6 @@ function EventContainer() {
     React.useEffect(() => {
       data?.forEach((item:any) => {
         if (item.nameLink === name) {
-          console.log(item.events);
           setEventData(item.events);
           setClubData(item);
         }

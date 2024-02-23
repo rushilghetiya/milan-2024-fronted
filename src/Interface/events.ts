@@ -4,3 +4,6 @@ export interface IRegisterForEvent {
     event_code:number;
     }
     
+    export interface IUnregisterForEvent {
+    user_id: string;
+    }

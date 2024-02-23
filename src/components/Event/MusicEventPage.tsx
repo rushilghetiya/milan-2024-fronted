@@ -7,13 +7,16 @@ import useUser from "@/features/authentication/useUser";
 import useEvent from "@/features/events/useEvent";
 import { toast } from "../ui/use-toast";
 function MusicEventPage() {
+
   const [eventData, setEventData] = React.useState<any>([]);
   const [listData, setListData] = React.useState<any>([]);
   const { id } = useParams();
+  const {eventCode, eventCodeOfUser,eventCodeOfUserLoading}=useEvent();
   React.useEffect(() => {
     setEventData(data[0]?.events);
+    eventCodeOfUser();
+   
   }, []);
-
   const { user, isAuthenticated } = useUser();
   const { registerForEvent, registerForEventLoading } = useEvent();
   React.useEffect(() => {
@@ -22,10 +25,9 @@ function MusicEventPage() {
         setListData(item);
       }
     });
+    
   });
-  console.log(user?.name, user?.id, id);
   const handleRegisterForEvent = () => {
-    console.log( user);
     if (isAuthenticated) {
       if (user?.name && user?.id && id) {
         const data = {
@@ -52,13 +54,30 @@ function MusicEventPage() {
   };
   return (
     <div>
-      <Button
-        className="bg-green-500   "
-        onClick={() => handleRegisterForEvent()}
-        disabled={!isAuthenticated || registerForEventLoading}
-      >
-        Register
-      </Button>
+      {
+        (eventCodeOfUserLoading && eventCode?.includes(Number(id))) ? (
+          
+            <Button
+            className="bg-green-500   "
+            onClick={() => handleRegisterForEvent()}
+            disabled={!isAuthenticated || registerForEventLoading}
+          >
+            Register
+          </Button>
+          
+        ):(
+          
+            <Button
+            className="bg-green-500   "
+            onClick={() => handleRegisterForEvent()}
+            disabled={!isAuthenticated || registerForEventLoading}
+          >
+            unregister
+          </Button>
+          
+        )
+      }
+     
       {user?.name}
     </div>
   );
