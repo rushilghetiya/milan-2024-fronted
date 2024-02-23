@@ -9,3 +9,4 @@ export const logoutUserApi = `${VAR}/users/auth/logout`;
 // events api
 
 export const registerForEventApi = `${VAR}/api/events/register`;
+export const getEventByUserApi = `${VAR}/api/events/getEvent`;
