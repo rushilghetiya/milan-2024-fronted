@@ -22,7 +22,7 @@ const useUser = () => {
 				redirectUrl = "/register";
 			}
 		} else {
-			queryClient.setQueryData(["user"], data?.data?.user);
+			queryClient.setQueryData(["user"], data);
 			isAuthenticated = true;
 		}
 	}

@@ -4,6 +4,7 @@ export const getCurrentUserApi = `${VAR}/users/auth/current`;
 
 export const registerUserApi = `${VAR}/users/auth/register`;
 
+export const logoutUserApi = `${VAR}/users/auth/logout`;
 
 // events api
 
