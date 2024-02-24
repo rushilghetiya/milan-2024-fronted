@@ -8,8 +8,6 @@ import Home from "./pages/Home/Home";
 import Event from "./pages/Event/Event";
 import EventContainer from "./components/Event/EventContainer";
 import MusicEventPage from "./components/Event/MusicEventPage";
-import Header from "./components/Header/Header";
-import { ParallaxProvider } from "react-scroll-parallax";
 import DashBoard from "./pages/DashBoard";
 
 const queryClient = new QueryClient({
@@ -24,21 +22,20 @@ function App() {
 	return (
 		<QueryClientProvider client={queryClient}>
 			<BrowserRouter>
-				<ParallaxProvider>
+			
 					<div className="App">
-						<Header />
 						<Routes>
 							<Route element={<ProtectedRoutes />}>
-								<Route path="/" element={<Home />} />
 								<Route path="/auth" element={<DashBoard />} />
 							</Route>
+								<Route path="/" element={<Home />} />
 							<Route path="/event" element={<Event />} />
 							<Route path="/register" element={<Register />} />
 							<Route path="/event/:name" element={<EventContainer />} />
 							<Route path="/event/music/:id" element={<MusicEventPage />} />
 						</Routes>
 					</div>
-				</ParallaxProvider>
+				
 			</BrowserRouter>
 			<Toaster />
 		</QueryClientProvider>
