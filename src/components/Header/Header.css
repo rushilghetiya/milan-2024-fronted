@@ -1,14 +1,3 @@
-.header {
-	position: fixed;
-	width: 100%;
-	height: 90px;
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
-	padding: 1.5rem;
-	z-index: 999;
-}
-
 .navbar {
 	font-family: "Poppins";
 	text-transform: uppercase;
@@ -37,6 +26,17 @@
 	margin-bottom: -24px;
 	max-width: 200px;
 	height: 100px;
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	height: 90px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 1.5rem;
+	z-index: 999;
 }
 
 .nav-menu {

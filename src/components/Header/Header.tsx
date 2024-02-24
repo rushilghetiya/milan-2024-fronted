@@ -1,6 +1,6 @@
 /*eslint-disable*/
 import React, { useEffect, useState } from "react";
-import "./headerStyles.css";
+import "./Header.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../../assets/Images/XXIV.webp";
 import useUser from "@/features/authentication/useUser";
@@ -21,7 +21,7 @@ const Header = () => {
 
 	useEffect(() => {
 		const handleScroll = () => {
-			if (window.pageYOffset > 0) {
+			if (window.scrollY > 0) {
 				setIsNavbarHidden(true);
 			} else {
 				setIsNavbarHidden(false);
