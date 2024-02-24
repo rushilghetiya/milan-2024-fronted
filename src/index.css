@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@100..900&family=Noto+Sans+Tamil:wght@100..900&family=Noto+Serif+Tamil:ital,wght@0,100..900;1,100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Unbounded:wght@200..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@100..900&family=Noto+Sans+Tamil:wght@100..900&family=Noto+Serif+Tamil:ital,wght@0,100..900;1,100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Unbounded:wght@200..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -15,6 +15,7 @@ body,
 #root {
 	width: 100%;
 	height: 100vh;
+	background: #000;
 }
 
 #root {
@@ -34,12 +35,9 @@ body::-webkit-scrollbar {
 	display: none;
 }
 
-
-@font-face{
+@font-face {
 	font-family: "tamil";
 	src: url("./Assets/fonts/tamil/VANAVIL-Avvaiyar\ Regular.otf");
 	font-weight: 400;
 	font-style: normal;
-	
 }
-
