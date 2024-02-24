@@ -1,6 +1,6 @@
 /*eslint-disable*/
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import "./headerStyles.css";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -16,6 +16,7 @@ import {
 	useMotionValueEvent,
 } from "framer-motion";
 import { Link } from "react-router-dom";
+import { cn } from "@/lib/utils";
 
 const Header = () => {
 	const [click, setClick] = useState(false);
@@ -42,21 +43,28 @@ const Header = () => {
 
 	const { user, isAuthenticated } = useUser();
 
+	const [direction, setDirection] = useState(-1);
+
 	const { scrollYProgress } = useScroll();
 
-	const [visible, setVisible] = useState(false);
+	const [visible, setVisible] = useState(true);
 
 	useMotionValueEvent(scrollYProgress, "change", (current) => {
 		// Check if current is not undefined and is a number
 		if (typeof current === "number") {
-			const direction = current! - scrollYProgress.getPrevious()!;
+			setDirection((d) => current! - scrollYProgress.getPrevious()!);
 			if (direction < 0) {
 				setVisible(true);
 			} else {
+				console;
 				setVisible(false);
 			}
 		}
 	});
+
+	useEffect(() => {
+		setDirection(-1);
+	}, []);
 
 	return (
 		<AnimatePresence mode="wait">
@@ -73,7 +81,7 @@ const Header = () => {
 					duration: 0.4,
 				}}
 			>
-				<div className={`header navbar ${isNavbarHidden ? "hidden" : ""}`}>
+				<div className="header navbar">
 					<Link to="/">
 						<img className="logo" alt="logo" src={logo} />
 					</Link>

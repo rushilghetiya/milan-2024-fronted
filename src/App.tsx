@@ -21,7 +21,6 @@ const queryClient = new QueryClient({
 
 function App() {
 	return (
-		<BrowserRouter>
 		<QueryClientProvider client={queryClient}>
 			<BrowserRouter>
 				<ParallaxProvider>
@@ -41,7 +40,6 @@ function App() {
 			</BrowserRouter>
 			<Toaster />
 		</QueryClientProvider>
-			</BrowserRouter>
 	);
 }
 
