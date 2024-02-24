@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Unbounded:wght@200..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@100..900&family=Noto+Sans+Tamil:wght@100..900&family=Noto+Serif+Tamil:ital,wght@0,100..900;1,100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Unbounded:wght@200..900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -36,7 +36,7 @@ body::-webkit-scrollbar {
 
 
 @font-face{
-	font-family: "VANAVIL-Avvaiyar Regular";
+	font-family: "tamil";
 	src: url("./Assets/fonts/tamil/VANAVIL-Avvaiyar\ Regular.otf");
 	font-weight: 400;
 	font-style: normal;

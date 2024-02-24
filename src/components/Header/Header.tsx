@@ -73,7 +73,7 @@ const Header = () => {
 						Events
 					</Link>
 				</li>
-				<li>
+				{/* <li>
 					<Link
 						to="/spotlight"
 						onClick={() => setClick(false)}
@@ -137,7 +137,7 @@ const Header = () => {
 							Login
 						</div>
 					)}
-				</li>
+				</li> */}
 				<li className="glow-on-hover">
 					<Link
 						to={isTicketValid ? "/dashboard" : "/tickets"}
