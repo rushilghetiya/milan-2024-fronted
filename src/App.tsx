@@ -10,6 +10,7 @@ import EventContainer from "./components/Event/EventContainer";
 import MusicEventPage from "./components/Event/MusicEventPage";
 import Header from "./components/Header/Header";
 import { ParallaxProvider } from "react-scroll-parallax";
+import DashBoard from "./pages/DashBoard";
 
 const queryClient = new QueryClient({
 	defaultOptions: {
@@ -29,6 +30,7 @@ function App() {
 						<Routes>
 							<Route element={<ProtectedRoutes />}>
 								<Route path="/" element={<Home />} />
+								<Route path="/auth" element={<DashBoard />} />
 							</Route>
 							<Route path="/event" element={<Event />} />
 							<Route path="/register" element={<Register />} />
