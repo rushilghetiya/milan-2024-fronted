@@ -27,9 +27,8 @@ function App() {
 					<div className="App">
 						<Header />
 						<Routes>
-							<Route element={<ProtectedRoutes />}>
-								<Route path="/" element={<Home />} />
-							</Route>
+							<Route element={<ProtectedRoutes />}></Route>
+							<Route path="/" element={<Home />} />
 							<Route path="/event" element={<Event />} />
 							<Route path="/register" element={<Register />} />
 							<Route path="/event/:name" element={<EventContainer />} />
