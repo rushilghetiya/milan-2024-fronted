@@ -16,6 +16,10 @@ body,
 	height: 100vh;
 }
 
+#root {
+	display: inline;
+}
+
 body {
 	background: #000;
 	color: aliceblue;
