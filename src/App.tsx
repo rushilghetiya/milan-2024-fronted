@@ -9,6 +9,7 @@ import Event from "./pages/Event/Event";
 import EventContainer from "./components/Event/EventContainer";
 import MusicEventPage from "./components/Event/MusicEventPage";
 import DashBoard from "./pages/DashBoard";
+import Header from "./components/Header/Header";
 
 const queryClient = new QueryClient({
 	defaultOptions: {
@@ -22,7 +23,7 @@ function App() {
 	return (
 		<QueryClientProvider client={queryClient}>
 			<BrowserRouter>
-			
+			<Header/>
 					<div className="App">
 						<Routes>
 							<Route element={<ProtectedRoutes />}>

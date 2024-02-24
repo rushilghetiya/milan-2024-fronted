@@ -17,6 +17,10 @@ body,
 	height: 100vh;
 }
 
+#root {
+	display: inline;
+}
+
 body {
 	color: aliceblue;
 }
