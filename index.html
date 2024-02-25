@@ -6,28 +6,35 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>MILAN'24</title>
 		<style>
-            #pre {
-                display: grid;
-                place-items: center;
-                background-color: black;
-                width: 100%;
-                height: 100%;
-            }
-        </style>
+			#pre {
+				display: grid;
+				place-items: center;
+				background-color: black;
+				width: 100%;
+				height: 100%;
+			}
+		</style>
 	</head>
 	<body>
 		<div id="root"></div>
-        <div id="pre"><img src="./src/Assets/Images/loader.gif
-			"></div>
+		<div
+			id="pre"
+			style="height: 100vh; width: 100vw; position: fixed; top: 0; right: 0"
+		>
+			<img
+				src="./src/Assets/Images/loader.gif
+			"
+			/>
+		</div>
 		<script>
 			document.onreadystatechange = function () {
-				if (document.readyState !== 'complete') {
-					document.getElementById('root').style.display = 'none';
-					document.getElementById('pre').style.visibility = 'visible';
+				if (document.readyState !== "complete") {
+					document.getElementById("root").style.display = "none";
+					document.getElementById("pre").style.visibility = "visible";
 				} else {
 					setTimeout(() => {
-						document.getElementById('root').style.display = 'inline';
-						document.getElementById('pre').style.display = 'none';
+						document.getElementById("root").style.display = "inline";
+						document.getElementById("pre").style.display = "none";
 					}, 3000);
 				}
 			};
