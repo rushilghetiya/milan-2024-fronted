@@ -47,7 +47,7 @@ const Header = () => {
 		logout();
 	}
 
-	const { user, isAuthenticated } = useUser();
+	// const { user, isAuthenticated } = useUser();
 
 	return (
 		<div className={`header navbar ${isNavbarHidden ? "hidden" : ""}`}>
