@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import "./Event.css";
 
-import { eventData } from "../../DataList/events";
+import  data  from "../../DataList/EventList";
 import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom";
 // import { useQueryClient } from "react-query";
@@ -26,7 +26,7 @@ function Event() {
         </p>
       </div>
       <div>
-        {eventData?.map((event: any, index: number) => {
+        {data?.map((event: any, index: number) => {
           return (
             <Link to={`/event/${event.nameLink}`}>
               <div
@@ -35,7 +35,7 @@ function Event() {
                   " w-[350px] h-[250px] border-2 relative z-[3]   ",
                 )}
               >
-                <img src={event.bgImage} className="object-cover w-full h-full   "></img>
+                {/* <img src={event.bgImage} className="object-cover w-full h-full   "></img> */}
                 <div className="absolute w-full h-full bg-black/30 top-0" />
                 <h1 className=" absolute top-10 right-5 text-white text-[poppins] font-extrabold text-[4rem] capitalize  ">#{event.name}</h1>
               </div>
