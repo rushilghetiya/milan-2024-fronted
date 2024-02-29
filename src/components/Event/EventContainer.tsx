@@ -18,9 +18,9 @@ function EventContainer() {
       })},[]);
  
   return (
-    <div className="club-page" style={{background: `linear-gradient(0deg, rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.536) 0), url(${clubData.bgImage}) 50%/cover no-repeat fixed`,}}>
-      <div className=" relative  ">
-        <h1 className='text-white text-center text-[3rem] uppercase font-["Unbounded",sans-serif] font-extrabold tracking-wider pt-[3rem]  '>
+    <div className="club-page" style={{background: `${clubData.bgImage} 50%/cover no-repeat fixed`,}}>
+      <div className="events-top">
+        <h1 className='text-white text-center text-[4rem] uppercase font-["Unbounded",sans-serif] font-extrabold tracking-wider pt-[3rem] '>
           {clubData.name}
         </h1>
         <p className="text-white font-regular font-[montserrat] text-center text-[2rem] uppercase drop-shadow-md pt-[2rem] ">
@@ -29,20 +29,36 @@ function EventContainer() {
       </div>
       <div className='events-container'>
         {eventData?.map((event: any, index: number) => {
-          return (
-        <Link to={`${event.eventLink}`}>
-          <div
-              key={index}
-              className="event-card"
-              style={clubData.eventColor}
-            >
-              {/* <img src={clubData.bgImage} className="object-cover w-full h-full"></img> */}
-              <div className="" />
-              <p className="text-white text-[poppins] font-extrabold capitalize">{event.title}</p>
-            </div>
-        </Link>
-          
-          );
+          if(event.id%2){
+            return (
+              <Link to={`${event.eventLink}`}>
+                <div
+                    key={index}
+                    className="event-card-even"
+                    style={clubData.eventColorEven}
+                  >
+                    {/* <img src={clubData.bgImage} className="object-cover w-full h-full"></img> */}
+                    <div className="" />
+                    <h1 className="text-[poppins] font-extrabold capitalize" style={clubData.eventTextClr}>{event.title}</h1>
+                  </div>
+              </Link>
+            );
+          }
+          else {
+            return (
+              <Link to={`${event.eventLink}`}>
+                <div
+                    key={index}
+                    className="event-card"
+                    style={clubData.eventColor}
+                  >
+                    {/* <img src={clubData.bgImage} className="object-cover w-full h-full"></img> */}
+                    <div className="" />
+                    <h1 className="text-[poppins] font-extrabold capitalize" style={clubData.eventTextClr}>{event.title}</h1>
+                  </div>
+              </Link>
+            )
+          }
         })}
       </div>
     </div>

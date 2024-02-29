@@ -4,14 +4,21 @@ const data = [
     name: "Music",
     link: "event/music",
     nameLink: "music",
-    color: "#faa307",
-    bgImage: "/src/Assets/Images/music-1.jpg",
+    color: "#ffffff",
+    bgImage: "#0d101c",
     // bgImageMobile: require("../utils/images/categories/music/eventlistmbg-music.webp"),
-    bgGradientColor: {
+    // bgGradientColor: {
+    //   background:
+    //     "linear-gradient(0deg, rgba(83,6,39,1) 0%, rgba(0,0,0,1) 70%)",
+    // },
+    eventColor: {
       background:
-        "linear-gradient(0deg, rgba(83,6,39,1) 0%, rgba(0,0,0,1) 70%)",
+        "linear-gradient(90deg, rgba(28,45,133,1) 0%, rgba(35,68,231,1) 50%, rgba(158,169,223,1) 100%)",
     },
-    eventColor: { backgroundColor: "#000" },
+    eventColorEven: {
+      background:
+        "linear-gradient(270deg, rgba(28,45,133,1) 0%, rgba(35,68,231,1) 50%, rgba(158,169,223,1) 100%)",
+    },
     // eventImg: require("../utils/images/categories/music/eventlistcard-music.webp"),
     eventGradient: {
       background:
@@ -19,7 +26,7 @@ const data = [
     },
     // eventHeading: require("../utils/images/categories/music/text-music.webp"),
     eventText: "feel the beat",
-    eventTextClr: { color: "#fa207c" },
+    eventTextClr: { color: "#fff" },
     events: [
       {
         id: "11",
@@ -458,12 +465,19 @@ const data = [
     link: "event/dance",
     nameLink: "dance",
     // color: '',
-    // bgImage: require(''),
+    bgImage: "#1e1208",
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
     // },
-    // eventColor: { backgroundColor: '' },
+    eventColor: {
+      background:
+        "linear-gradient(90deg, rgba(139,75,20,1) 0%, rgba(236,132,44,1) 50%, rgba(232,184,142,1) 100%)",
+    },
+    eventColorEven: {
+      background:
+        "linear-gradient(270deg, rgba(139,75,20,1) 0%, rgba(236,132,44,1) 50%, rgba(232,184,142,1) 100%)",
+    },
     // eventImg: require(''),
     // eventGradient: {
     //   background: '',
@@ -708,12 +722,19 @@ const data = [
     link: "event/fashion",
     nameLink: "fashion",
     // color: '',
-    // bgImage: require(''),
+    bgImage: "#180c15",
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
     // },
-    // eventColor: { backgroundColor: '' },
+    eventColor: {
+      background:
+        "linear-gradient(90deg, rgba(141,23,112,1) 0%, rgba(244,18,188,1) 50%, rgba(220,139,200,1) 100%)",
+    },
+    eventColorEven: {
+      background:
+        "linear-gradient(270deg, rgba(141,23,112,1) 0%, rgba(244,18,188,1) 50%, rgba(220,139,200,1) 100%)",
+    },
     // eventImg: require(''),
     // eventGradient: {
     //   background: '',
@@ -1015,13 +1036,20 @@ const data = [
     name: "Movies and Dramatics",
     link: "event/moviesanddramatics",
     nameLink: "moviesanddramatics",
-    // color: '',
-    // bgImage: require(''),
+    // color: "#001709",
+    bgImage: "#021309",
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
     // },
-    // eventColor: { backgroundColor: '' },
+    eventColor: {
+      background:
+        "linear-gradient(90deg, rgba(7,148,130,1) 0%, rgba(30,198,193,1) 48%, rgba(111,246,167,1) 100%)",
+    },
+    eventColorEven: {
+      background:
+        "linear-gradient(270deg, rgba(7,148,130,1) 0%, rgba(30,198,193,1) 48%, rgba(111,246,167,1) 100%)",
+    },
     // eventImg: require(''),
     // eventGradient: {
     //   background: '',
