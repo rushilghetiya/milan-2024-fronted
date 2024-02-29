@@ -1,0 +1,147 @@
+.dance-title {
+  font-size: 3em;
+  padding-top: 30px;
+  /* margin: 50px; */
+  word-wrap: break-word;
+  hyphens: auto;
+  white-space: normal;
+  font-family: mars;
+  font-weight: bold;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  text-shadow: 4px 8px 4px rgba(73, 76, 82, 0.6);
+}
+
+.dance-description {
+  font-size: larger;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+.dance-content {
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+  color: white;
+}
+.dance-top {
+  margin-top: 30px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  /* margin: 20px; */
+  /* padding: 20px; */
+  justify-content: center;
+  align-items: flex-start;
+}
+.dance-content h2 {
+  text-align: center;
+}
+.dance-top h3 {
+  padding: 10px 20px;
+  /* color: white; */
+}
+.danceSubtitle {
+  color: #ff9d5e;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  /* padding: 10px 10px 10px 4px; */
+}
+.dance-content2 {
+  background-color: #1f1e1f;
+  background: rgba(228, 189, 157, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  justify-content: space-between;
+}
+.dancec-rules {
+  padding: 4px 5px 5px 5px;
+}
+.dance-content {
+  /* margin: 50px; */
+  color: white;
+  text-align: left;
+  justify-content: center;
+}
+.dance-contact {
+  padding-top: 50px;
+  color: white;
+}
+.dance-contact > h3 {
+  color: #ff9d5e;
+}
+.dance-btn {
+  float: right;
+  padding: 30px;
+  margin-top: -77px;
+  /* border: solid 2px black; */
+  background-color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+  color: #1f1e1f;
+}
+.dance-btn:hover {
+  background-color: #fce6d9;
+  color: black;
+}
+.dance-eventsdata {
+  margin: 0 2rem;
+  padding: 5rem 0;
+  left: 0px;
+  top: 0px;
+
+  /* background: linear-gradient(180deg, #5f2501 0%, #1f1e1f 100%);
+           */
+  /* background-image: url("../../utils//images/eventbg/dance.svg"); */
+  /* background-size: cover;
+    background-position: center;
+    background-attachment: fixed; */
+}
+.dance-items {
+  padding: 10px;
+  color: white;
+}
+
+.flexdance {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.dancehead {
+  color: #ff9d5e;
+
+  text-align: left;
+  align-items: flex-start;
+  justify-content: center;
+}
+.danceMainContent {
+  padding: 20px;
+  margin: 50px;
+  background-color: #1f1e1f;
+  background: rgba(228, 189, 157, 0.1);
+}
+.rules {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .dance-title {
+    font-size: 24px;
+  }
+  .dance-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .danceMainContent {
+    margin: 30px 10px;
+  }
+  .dance-eventsdata {
+    background-image: url("../../utils//images/event-gb-mob/dance.svg");
+    background-attachment: fixed;
+    margin: 0 1rem;
+  }
+}
