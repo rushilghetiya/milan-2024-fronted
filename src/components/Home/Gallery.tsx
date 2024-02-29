@@ -13,7 +13,7 @@ export function Gallery() {
     </div>
     <section >
         <h3 className="text-[3rem] text-center  font-['montserrat'] font-bold ">Contact Us</h3>
-        <div className=" flex justify-center  gap-x-[8rem] py-[63px] ">
+        <div className=" flex flex-col md:flex-row justify-center gap-y-[3rem] py-[63px] ">
 
           <ContactCard
             title="Publicity"
