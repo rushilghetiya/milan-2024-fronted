@@ -138,14 +138,14 @@ const Header = () => {
 						</div>
 					)}
 				</li> */}
-				<li className="glow-on-hover">
+				{/* <li className="glow-on-hover">
 					<Link
 						to={isTicketValid ? "/dashboard" : "/tickets"}
 						onClick={() => setClick(false)}
 					>
 						{isTicketValid ? "Dashboard" : "Tickets"}
 					</Link>
-				</li>
+				</li> */}
 			</ul>
 			<div className="hamburger" onClick={handleClick}>
 				{click ? (
