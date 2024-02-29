@@ -5,6 +5,7 @@ import data from "../../DataList/EventList";
 import { CardBody, CardContainer, CardItem } from "../../components/ui/3d-card";
 // import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom";
+import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
 // import { useQueryClient } from "react-query";
 
 function Event() {
@@ -13,6 +14,14 @@ function Event() {
   //   queryClient.invalidateQueries("eventCodeOfUser");
 
   //  },[]);
+  const colors = [
+    "bg-red-500",
+    "bg-blue-500",
+    "bg-green-500",
+    "bg-yellow-500",
+    "bg-purple-500",
+    "bg-pink-500",
+  ];
 
   return (
     <div className="eventContainer">
@@ -30,19 +39,26 @@ function Event() {
             return (
               <CardContainer>
                 <CardBody>
-                  <CardItem translateZ="30" rotateX={10} rotateZ={-5}>
+                  <CardItem
+                    translateZ="90"
+                    rotateX={10}
+                    rotateZ={-5}
+                    className={`${
+                      colors[index % colors.length]
+                    } bg-opacity-100`}
+                  >
+                    {/* <BackgroundGradientAnimation interactive = {true}> */}
                     <Link to={`/event/${event.nameLink}`}>
-                      <div key={index} className="club-box">
+                      <div key={index} className="club-box rounded-md">
                         {/* <img src={event.bgImage} className="object-cover w-full h-full   "></img> */}
-                        <div className="category-box">
-                          <CardItem translateZ="50">
-                            <p className="text-white text-[poppins] font-extrabold capitalize  ">
-                              #{event.name}
-                            </p>
-                          </CardItem>
+                        <div className="category-box rounded-md m-0">
+                          <p className="text-white text-[poppins] font-extrabold capitalize  ">
+                            #{event.name}
+                          </p>
                         </div>
                       </div>
                     </Link>
+                    {/* </BackgroundGradientAnimation> */}
                   </CardItem>
                 </CardBody>
               </CardContainer>

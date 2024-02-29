@@ -84,7 +84,7 @@ export const CardBody = ({
   return (
     <div
       className={cn(
-        "w-96 [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
+        "[transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
         className
       )}
     >
@@ -134,7 +134,10 @@ export const CardItem = ({
   return (
     <Tag
       ref={ref}
-      className={cn("w-fit transition duration-200 ease-linear", className)}
+      className={cn(
+        "rounded-md w-fit transition duration-200 ease-linear",
+        className
+      )}
       {...rest}
     >
       {children}
