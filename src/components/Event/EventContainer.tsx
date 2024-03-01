@@ -1,9 +1,10 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { eventData as data } from '@/DataList/events';
+import data from '@/DataList/EventList';
 import { cn } from '@/lib/utils';
 import { Link } from 'react-router-dom';
+import './EventContainer.css';
 function EventContainer() {
   const [eventData, setEventData] = React.useState<any>([]);
   const [clubData, setClubData] = React.useState<any>({});
@@ -17,41 +18,49 @@ function EventContainer() {
       })},[]);
  
   return (
-
-
-    <div style={{
-      background: `url(${clubData.bgImage}) center/cover no-repeat`,
-    }} className="w-screen h-screen bg-fixed ">
-
-      <div className="absolute h-screen w-screen bg-black/30 z-[0] "></div>
-      <div className=" relative  ">
-        <h1 className='text-white text-center text-[3rem] uppercase font-["Unbounded",sans-serif] font-extrabold tracking-wider pt-[3rem]  '>
+    <div className="club-page" style={{background: `${clubData.bgImage} 50%/cover no-repeat fixed`,}}>
+      <div className="events-top">
+        <h1 className='text-white text-center text-[4rem] uppercase font-["Unbounded",sans-serif] font-extrabold tracking-wider pt-[3rem] '>
           {clubData.name}
         </h1>
         <p className="text-white font-regular font-[montserrat] text-center text-[2rem] uppercase drop-shadow-md pt-[2rem] ">
           {clubData.eventText}
         </p>
       </div>
-      <div>
+      <div className='events-container'>
         {eventData?.map((event: any, index: number) => {
-          return (
-        <Link to={`/${event.eventLink}`}>
-          <div
-              key={index}
-              className={cn(
-                " w-[350px] h-[250px] border-2 relative z-[3]   ",
-              )}
-            >
-              <img src={clubData.bgImage} className="object-cover w-full h-full   "></img>
-              <div className="absolute w-full h-full bg-black/30 top-0" />
-              <h1 className=" absolute top-10 right-5 text-white text-[poppins] font-extrabold text-[4rem] capitalize  ">#{event.title}</h1>
-            </div>
-        </Link>
-          
-          );
+          if(event.id%2){
+            return (
+              <Link to={`${event.eventLink}`}>
+                <div
+                    key={index}
+                    className="event-card-even"
+                    style={clubData.eventColorEven}
+                  >
+                    {/* <img src={clubData.bgImage} className="object-cover w-full h-full"></img> */}
+                    <div className="" />
+                    <h1 className="text-[poppins] font-extrabold capitalize" style={clubData.eventTextClr}>{event.title}</h1>
+                  </div>
+              </Link>
+            );
+          }
+          else {
+            return (
+              <Link to={`${event.eventLink}`}>
+                <div
+                    key={index}
+                    className="event-card"
+                    style={clubData.eventColor}
+                  >
+                    {/* <img src={clubData.bgImage} className="object-cover w-full h-full"></img> */}
+                    <div className="" />
+                    <h1 className="text-[poppins] font-extrabold capitalize" style={clubData.eventTextClr}>{event.title}</h1>
+                  </div>
+              </Link>
+            )
+          }
         })}
       </div>
-
     </div>
   )
 }

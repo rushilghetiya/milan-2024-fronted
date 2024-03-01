@@ -1,47 +1,70 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import "./Event.css";
 
-import  data  from "../../DataList/EventList";
-import { cn } from "@/lib/utils";
+import data from "../../DataList/EventList";
+import { CardBody, CardContainer, CardItem } from "../../components/ui/3d-card";
+// import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom";
+import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
 // import { useQueryClient } from "react-query";
 
 function Event() {
-// const queryClient = useQueryClient();
-//  React.useEffect(() => {
-//   queryClient.invalidateQueries("eventCodeOfUser");
+  // const queryClient = useQueryClient();
+  //  React.useEffect(() => {
+  //   queryClient.invalidateQueries("eventCodeOfUser");
 
-//  },[]);
- 
+  //  },[]);
+  const colors = [
+    "bg-red-500",
+    "bg-blue-500",
+    "bg-green-500",
+    "bg-yellow-500",
+    "bg-purple-500",
+    "bg-pink-500",
+  ];
 
   return (
-    <div className="eventContainer w-screen h-screen relative ">
-      <div className="absolute h-screen w-screen bg-black/30 z-[0] "></div>
-      <div className=" relative  ">
-        <h1 className='text-white text-center text-[3rem] uppercase font-["Unbounded",sans-serif] font-extrabold tracking-wider pt-[3rem]  '>
+    <div className="eventContainer">
+      <div className="event-top">
+        <h1 className='text-white text-center text-[3rem] uppercase font-["Unbounded",sans-serif] font-extrabold tracking-wider pt-[3rem]'>
           Events
         </h1>
         <p className="text-white font-regular font-[montserrat] text-center text-[2rem] uppercase drop-shadow-md pt-[2rem] ">
           Tighten Your Seatbelts!
         </p>
       </div>
-      <div>
-        {data?.map((event: any, index: number) => {
-          return (
-            <Link to={`/event/${event.nameLink}`}>
-              <div
-                key={index}
-                className={cn(
-                  " w-[350px] h-[250px] border-2 relative z-[3]   ",
-                )}
-              >
-                {/* <img src={event.bgImage} className="object-cover w-full h-full   "></img> */}
-                <div className="absolute w-full h-full bg-black/30 top-0" />
-                <h1 className=" absolute top-10 right-5 text-white text-[poppins] font-extrabold text-[4rem] capitalize  ">#{event.name}</h1>
-              </div>
-            </Link>
-          );
-        })}
+      <div className="club-container">
+        <div className="clubs">
+          {data?.map((event: any, index: number) => {
+            return (
+              <CardContainer>
+                <CardBody>
+                  <CardItem
+                    translateZ="90"
+                    rotateX={10}
+                    rotateZ={-5}
+                    className={`${
+                      colors[index % colors.length]
+                    } bg-opacity-100`}
+                  >
+                    {/* <BackgroundGradientAnimation interactive = {true}> */}
+                    <Link to={`/event/${event.nameLink}`}>
+                      <div key={index} className="club-box rounded-md">
+                        {/* <img src={event.bgImage} className="object-cover w-full h-full   "></img> */}
+                        <div className="category-box rounded-md m-0">
+                          <p className="text-white text-[poppins] font-extrabold capitalize  ">
+                            #{event.name}
+                          </p>
+                        </div>
+                      </div>
+                    </Link>
+                    {/* </BackgroundGradientAnimation> */}
+                  </CardItem>
+                </CardBody>
+              </CardContainer>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
