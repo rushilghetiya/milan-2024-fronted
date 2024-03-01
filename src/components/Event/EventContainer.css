@@ -1,9 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
 .club-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-bottom: 30px;
   position: relative;
+}
+
+.events-top {
+  margin: 4em 0 2em 0;
 }
 
 .events-container {
@@ -14,18 +21,60 @@
 
 .event-card {
   height: 180px;
-  margin: 0.3em 0;
-  border: 2px solid white;
-  border-radius: 20px;
+  margin: 0.15em 0;
+  border-radius: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  font-size: 1.7em;
-  /* text-align: center; */
+  transition: all 0.3s;
+  font-size: 3.1em;
+  font-family: "Montserrat", sans-serif;
+  text-align: start;
+}
+
+.event-card-even {
+  height: 180px;
+  margin: 0.15em 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  transition: all 0.3s;
+  font-size: 3.1rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: end;
+}
+
+.event-card h1 {
+  text-transform: uppercase;
+  padding: 0 0.5em;
+}
+
+.event-card-even h1 {
+  text-transform: uppercase;
+  padding: 0 0.5em;
+}
+
+.event-card:hover {
+  height: 200;
+  scale: 1.03;
+}
+
+.event-card-even:hover {
+  height: 200;
+  scale: 1.03;
 }
 
 @media (max-width: 840px) {
   .events-container {
     margin: 5em 2.5em;
+  }
+
+  .event-card {
+    font-size: 1.7em;
+  }
+
+  .event-card-even {
+    font-size: 1.7em;
   }
 }
