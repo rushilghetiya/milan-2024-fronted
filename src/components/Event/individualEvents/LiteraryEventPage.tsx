@@ -78,19 +78,17 @@ function LiteraryEventPage() {
                 </div>
 
                 <div className='literary-content'>
-                    <p className='literaryDescription'>{listData.description}</p>
-
                     <div className='literary-top'>
                         {listData.teamSizeFrontend && (
                             <div className='literarys'>
-                                <h3 className='literary-subtitle'>Team size:</h3>
+                                <h3 className='literary-head'>Team size:</h3>
                                 <h4>{listData.teamSizeFrontend}</h4>
                             </div>
                         )}
 
                         {listData.mode && (
                             <div className='literarys'>
-                                <h3 className='literary-subtitle'>Mode:</h3>
+                                <h3 className='literary-head'>Mode:</h3>
                                 <h4>{listData.mode}</h4>
                             </div>
                         )}
@@ -122,6 +120,12 @@ function LiteraryEventPage() {
                         <p className="rules">{listData.judgingcriteria}</p>
                         </div> */}
 
+                        {listData.mode && (
+                            <div className='literary-judgement'>
+                                <h3 className='literary-subtitle'>Description :</h3>
+                                <h4>{listData.description}</h4>
+                            </div>
+                        )}
                         
                         <div className='literary-judgement'>
                             {listData.descriptionTips && (

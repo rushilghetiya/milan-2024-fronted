@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+.selfdefence-eventsdata {
+  padding: 5rem 2rem;
+  left: 0px;
+  top: 0px;
+  background: #1b0702;
+  /* background: linear-gradient(180deg, #5f2501 0%, #1f1e1f 100%);
+               */
+  /* background-image: url("../../utils//images/eventbg/selfdefence.svg"); */
+  /* background-size: cover;
+        background-position: center;
+        background-attachment: fixed; */
+}
+
 .selfdefence-title {
   font-size: 3em;
   padding-top: 30px;
@@ -5,12 +20,13 @@
   word-wrap: break-word;
   hyphens: auto;
   white-space: normal;
-  font-family: mars;
+  font-family: "Raleway", sans-serif;
   font-weight: bold;
   justify-content: center;
   text-align: center;
-  color: white;
-  text-shadow: 4px 8px 4px rgba(73, 76, 82, 0.6);
+  color: #f7d7d0;
+  text-shadow: 0px 0px 7px #f2baae, 0px 0px 10px #ee8d76, 0px 0px 21px #ee8d76,
+    0px 0px 42px #ee8d76, 0px 0px 82px #bd604c, 0px 0px 92px #c55e47;
 }
 
 .selfdefence-description {
@@ -26,6 +42,9 @@
   color: white;
 }
 .selfdefence-top {
+  margin: 2em 3em;
+  padding: 1em;
+  border-radius: 10px;
   margin-top: 30px;
   display: flex;
   /* flex-wrap: wrap; */
@@ -34,6 +53,7 @@
   /* padding: 20px; */
   justify-content: center;
   align-items: flex-start;
+  background: #c75034;
 }
 .selfdefence-content h2 {
   text-align: center;
@@ -43,7 +63,7 @@
   /* color: white; */
 }
 .selfdefenceSubtitle {
-  color: #ff9d5e;
+  color: #c75034;
   letter-spacing: 1px;
   margin-top: 10px;
   /* padding: 10px 10px 10px 4px; */
@@ -69,7 +89,7 @@
   color: white;
 }
 .selfdefence-contact > h3 {
-  color: #ff9d5e;
+  color: #c75034;
 }
 .selfdefence-btn {
   float: right;
@@ -87,18 +107,7 @@
   background-color: #fce6d9;
   color: black;
 }
-.selfdefence-eventsdata {
-  padding: 5rem 0;
-  left: 0px;
-  top: 0px;
 
-  /* background: linear-gradient(180deg, #5f2501 0%, #1f1e1f 100%);
-               */
-  /* background-image: url("../../utils//images/eventbg/selfdefence.svg"); */
-  /* background-size: cover;
-        background-position: center;
-        background-attachment: fixed; */
-}
 .selfdefence-items {
   padding: 10px;
   color: white;
@@ -111,8 +120,8 @@
   align-items: baseline;
 }
 .selfdefencehead {
-  color: #ff9d5e;
-
+  color: #1b0702;
+  font-weight: 600;
   text-align: left;
   align-items: flex-start;
   justify-content: center;
@@ -120,8 +129,8 @@
 .selfdefenceMainContent {
   padding: 20px;
   margin: 50px;
-  background-color: #1f1e1f;
-  background: rgba(228, 189, 157, 0.1);
+  background: #321108;
+  border-radius: 10px;
 }
 .rules {
   margin-top: 10px;
@@ -132,6 +141,7 @@
     font-size: 24px;
   }
   .selfdefence-top {
+    margin: 2em 0.8em;
     flex-direction: column;
     align-items: flex-start;
   }

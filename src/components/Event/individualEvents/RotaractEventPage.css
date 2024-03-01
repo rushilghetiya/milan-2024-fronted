@@ -1,3 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+.rotaract-eventsdata {
+  padding: 5rem 2rem;
+  left: 0px;
+  top: 0px;
+
+  background: #20001d;
+  /* background-image: url("../../utils//images/eventbg/rotaract.svg"); */
+  /* background-size: cover;
+  background-position: center;
+  background-attachment: fixed; */
+}
+
 .rotaract-title {
   font-size: 3em;
   padding-top: 30px;
@@ -5,19 +19,20 @@
   word-wrap: break-word;
   hyphens: auto;
   white-space: normal;
-  font-family: mars;
+  font-family: "Raleway", sans-serif;
   font-weight: bold;
   justify-content: center;
   text-align: center;
-  color: white;
-  text-shadow: 4px 8px 4px rgba(73, 76, 82, 0.6);
+  color: #e6f3b4;
+  text-shadow: 0px 0px 7px #e4fa84, 0px 0px 10px #acc249, 0px 0px 21px #adc34a,
+    0px 0px 42px #b5cb54, 0px 0px 82px #a8bf45, 0px 0px 92px #afc450;
 }
 
 .rotaract-description {
   font-size: larger;
   text-align: center;
   letter-spacing: 1px;
-  margin: 10px 0;
+  margin: 10px 2.5em;
 }
 
 .rotaract-content {
@@ -26,7 +41,9 @@
   color: white;
 }
 .rotaract-top {
-  margin-top: 30px;
+  margin: 2em 3em;
+  padding: 1em;
+  border-radius: 10px;
   display: flex;
   /* flex-wrap: wrap; */
   flex-direction: row;
@@ -34,6 +51,7 @@
   /* padding: 20px; */
   justify-content: center;
   align-items: flex-start;
+  background: #be1cab;
 }
 .rotaract-content h2 {
   text-align: center;
@@ -42,10 +60,16 @@
   padding: 10px 20px;
   /* color: white; */
 }
+
+.rotaract-top h4 {
+  color: #fad8fa;
+}
+
 .rotaractSubtitle {
-  color: #ff9d5e;
+  color: #be1cab;
   letter-spacing: 1px;
   margin-top: 10px;
+  font-weight: 400;
   /* padding: 10px 10px 10px 4px; */
 }
 .rotaract-content2 {
@@ -56,6 +80,7 @@
   justify-content: space-between;
 }
 .rotaractc-rules {
+  color: #0d101c;
   padding: 4px 5px 5px 5px;
 }
 .rotaract-content {
@@ -69,7 +94,7 @@
   color: white;
 }
 .rotaract-contact > h3 {
-  color: #ff9d5e;
+  color: #be1cab;
 }
 .rotaract-btn {
   float: right;
@@ -87,18 +112,7 @@
   background-color: #fce6d9;
   color: black;
 }
-.rotaract-eventsdata {
-  padding: 5rem 0;
-  left: 0px;
-  top: 0px;
 
-  /* background: linear-gradient(180deg, #5f2501 0%, #1f1e1f 100%);
-                     */
-  /* background-image: url("../../utils//images/eventbg/rotaract.svg"); */
-  /* background-size: cover;
-              background-position: center;
-              background-attachment: fixed; */
-}
 .rotaract-items {
   padding: 10px;
   color: white;
@@ -111,8 +125,8 @@
   align-items: baseline;
 }
 .rotaracthead {
-  color: #ff9d5e;
-
+  color: #20001d;
+  font-weight: 600;
   text-align: left;
   align-items: flex-start;
   justify-content: center;
@@ -120,10 +134,11 @@
 .rotaractMainContent {
   padding: 20px;
   margin: 50px;
-  background-color: #1f1e1f;
-  background: rgba(228, 189, 157, 0.1);
+  background: #3d0037;
+  border-radius: 10px;
 }
 .rules {
+  color: #d8edff;
   margin-top: 10px;
 }
 
@@ -132,6 +147,7 @@
     font-size: 24px;
   }
   .rotaract-top {
+    margin: 2em 0.8em;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -141,5 +157,10 @@
   .rotaract-eventsdata {
     background-image: url("../../utils//images/event-gb-mob/rotaract.svg");
     background-attachment: fixed;
+  }
+
+  .rotaract-description {
+    font-size: medium;
+    margin: 10px 0.8em;
   }
 }

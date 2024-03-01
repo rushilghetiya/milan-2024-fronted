@@ -1,28 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+.literary-eventsdata {
+  padding: 5rem 2rem;
+  left: 0px;
+  top: 0px;
+  background: #110313;
+}
+
 .literary-title {
   font-size: 3em;
   padding-top: 30px;
-  font-family: mars;
+  font-family: "Raleway", sans-serif;
   word-wrap: break-word;
   hyphens: auto;
   white-space: normal;
   font-weight: bold;
   justify-content: center;
   text-align: center;
-  color: white;
-  text-shadow: 4px 8px 4px rgba(73, 76, 82, 0.6);
+  color: #f5ccd3;
+  text-shadow: 0px 0px 7px #f5869a, 0px 0px 10px #ff1943, 0px 0px 21px #ff1943,
+    0px 0px 42px #ff1943, 0px 0px 82px #ff1943, 0px 0px 92px #ff1943;
 }
+
 .literary-content {
-  justify-content: center;
+  font-family: "Montserrat", sans-serif;
   color: white;
+  text-align: left;
+  justify-content: center;
 }
+
 .literary-top {
+  margin: 2em 3em;
+  padding: 1em;
+  border-radius: 10px;
   display: flex;
   /* flex-wrap: wrap; */
   flex-direction: row;
   /* margin: 20px; */
-  padding: 20px;
   justify-content: center;
   align-items: center;
+  background: #9a1441;
 }
 .literary-content h2 {
   text-align: center;
@@ -30,6 +47,13 @@
 .literary-top h3 {
   padding: 10px 20px;
 }
+
+.literary-head {
+  color: #110313;
+  font-weight: 600;
+  padding: 10px 10px 10px 4px;
+}
+
 .literarys {
   display: flex;
   flex-direction: row;
@@ -37,30 +61,28 @@
   align-items: baseline;
 }
 .literary-subtitle {
-  color: #a5a5a5;
+  color: #ff1943;
   padding: 10px 10px 10px 4px;
 }
 .literary-content2 {
-  background-color: #1f1e1f;
-  background: rgba(129, 129, 129, 0.218);
-  border-radius: 8px;
   padding: 20px;
-  justify-content: space-between;
+  margin: 50px;
+  background: #20051f;
+  border-radius: 10px;
 }
 .literary-rules {
   padding: 4px 5px 5px 5px;
 }
-.literary-content {
-  font-family: "Montserrat", sans-serif;
-  margin: 50px;
-  color: white;
-  text-align: left;
-  justify-content: center;
-}
+
 .literary-contact {
   padding-top: 50px;
   color: white;
 }
+
+.literary-contact h3 {
+  color: #ff1943;
+}
+
 .literary-btn {
   float: right;
   padding: 30px;
@@ -77,25 +99,15 @@
   background-color: #fce6d9;
   color: black;
 }
-.literary-eventsdata {
-  padding: 5rem 0;
-  left: 0px;
-  top: 0px;
 
-  /* background: linear-gradient(180deg, #5f2501 0%, #1f1e1f 100%);
-       */
-  background-image: url("../../utils/images/eventbg/literary.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
 .literary-items {
   padding: 10px;
 }
 .literaryDescription {
-  /* margin: 10px; */
+  font-size: larger;
   text-align: center;
+  letter-spacing: 1px;
+  margin: 10px 2.5em;
 }
 
 .speakerTable {
@@ -129,6 +141,7 @@
     font-size: 28px;
   }
   .literary-top {
+    margin: 2em 0.8em;
     flex-direction: column;
     align-items: flex-start;
 
@@ -144,5 +157,11 @@
   }
   .literary-content2 {
     font-size: 14px;
+    margin: 30px 10px;
+  }
+
+  .music-description {
+    font-size: medium;
+    margin: 10px 0.8em;
   }
 }

@@ -1,3 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+.photography-eventsdata {
+  padding: 5rem 2rem;
+  left: 0px;
+  top: 0px;
+
+  background: #02071b;
+  /* background-image: url("../../utils//images/eventbg/photography.svg"); */
+  /* background-size: cover;
+  background-position: center;
+  background-attachment: fixed; */
+}
+
 .photography-title {
   font-size: 3em;
   padding-top: 30px;
@@ -5,19 +19,20 @@
   word-wrap: break-word;
   hyphens: auto;
   white-space: normal;
-  font-family: mars;
+  font-family: "Raleway", sans-serif;
   font-weight: bold;
   justify-content: center;
   text-align: center;
-  color: white;
-  text-shadow: 4px 8px 4px rgba(73, 76, 82, 0.6);
+  color: #b1efd9;
+  text-shadow: 0px 0px 7px #a7f1d6, 0px 0px 10px #07f49e, 0px 0px 21px #07f49e,
+    0px 0px 42px #07f49e, 0px 0px 82px #048958, 0px 0px 92px #088e5d;
 }
 
 .photography-description {
   font-size: larger;
   text-align: center;
   letter-spacing: 1px;
-  margin: 10px 0;
+  margin: 10px 2.5em;
 }
 
 .photography-content {
@@ -26,7 +41,9 @@
   color: white;
 }
 .photography-top {
-  margin-top: 30px;
+  margin: 2em 3em;
+  padding: 1em;
+  border-radius: 10px;
   display: flex;
   /* flex-wrap: wrap; */
   flex-direction: row;
@@ -34,6 +51,7 @@
   /* padding: 20px; */
   justify-content: center;
   align-items: flex-start;
+  background: #0ca498;
 }
 .photography-content h2 {
   text-align: center;
@@ -42,10 +60,16 @@
   padding: 10px 20px;
   /* color: white; */
 }
+
+.photography-top h4 {
+  color: #fad8fa;
+}
+
 .photographySubtitle {
-  color: #ff9d5e;
+  color: #07f49e;
   letter-spacing: 1px;
   margin-top: 10px;
+  font-weight: 400;
   /* padding: 10px 10px 10px 4px; */
 }
 .photography-content2 {
@@ -56,6 +80,7 @@
   justify-content: space-between;
 }
 .photographyc-rules {
+  color: #0d101c;
   padding: 4px 5px 5px 5px;
 }
 .photography-content {
@@ -69,7 +94,7 @@
   color: white;
 }
 .photography-contact > h3 {
-  color: #ff9d5e;
+  color: #07f49e;
 }
 .photography-btn {
   float: right;
@@ -87,18 +112,7 @@
   background-color: #fce6d9;
   color: black;
 }
-.photography-eventsdata {
-  padding: 5rem 0;
-  left: 0px;
-  top: 0px;
 
-  /* background: linear-gradient(180deg, #5f2501 0%, #1f1e1f 100%);
-                   */
-  /* background-image: url("../../utils//images/eventbg/photography.svg"); */
-  /* background-size: cover;
-            background-position: center;
-            background-attachment: fixed; */
-}
 .photography-items {
   padding: 10px;
   color: white;
@@ -111,8 +125,8 @@
   align-items: baseline;
 }
 .photographyhead {
-  color: #ff9d5e;
-
+  color: #02071b;
+  font-weight: 600;
   text-align: left;
   align-items: flex-start;
   justify-content: center;
@@ -120,10 +134,11 @@
 .photographyMainContent {
   padding: 20px;
   margin: 50px;
-  background-color: #1f1e1f;
-  background: rgba(228, 189, 157, 0.1);
+  background: #030b2f;
+  border-radius: 10px;
 }
 .rules {
+  color: #d8edff;
   margin-top: 10px;
 }
 
@@ -132,6 +147,7 @@
     font-size: 24px;
   }
   .photography-top {
+    margin: 2em 0.8em;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -141,5 +157,10 @@
   .photography-eventsdata {
     background-image: url("../../utils//images/event-gb-mob/photography.svg");
     background-attachment: fixed;
+  }
+
+  .photography-description {
+    font-size: medium;
+    margin: 10px 0.8em;
   }
 }
