@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+.fashion-eventsdata {
+  padding: 5rem 2rem;
+  left: 0px;
+  top: 0px;
+  background: #180c15;
+  /* background: linear-gradient(180deg, #5f2501 0%, #1f1e1f 100%);
+           */
+  /* background-image: url("../../utils//images/eventbg/fashion.svg"); */
+  /* background-size: cover;
+    background-position: center;
+    background-attachment: fixed; */
+}
+
 .fashion-title {
   font-size: 3em;
   padding-top: 30px;
@@ -5,12 +20,13 @@
   word-wrap: break-word;
   hyphens: auto;
   white-space: normal;
-  font-family: mars;
+  font-family: "Raleway", sans-serif;
   font-weight: bold;
   justify-content: center;
   text-align: center;
-  color: white;
-  text-shadow: 4px 8px 4px rgba(73, 76, 82, 0.6);
+  color: #f6c7ea;
+  text-shadow: 0px 0px 7px #fa90df, 0px 0px 10px #f412bc, 0px 0px 21px #f412bc,
+    0px 0px 42px #f412bc, 0px 0px 82px #f412bc, 0px 0px 92px #f412bc;
 }
 
 .fashion-description {
@@ -26,7 +42,9 @@
   color: white;
 }
 .fashion-top {
-  margin-top: 30px;
+  margin: 2em 3em;
+  padding: 1em;
+  border-radius: 10px;
   display: flex;
   /* flex-wrap: wrap; */
   flex-direction: row;
@@ -34,6 +52,7 @@
   /* padding: 20px; */
   justify-content: center;
   align-items: flex-start;
+  background: #f412bc;
 }
 .fashion-content h2 {
   text-align: center;
@@ -43,7 +62,7 @@
   /* color: white; */
 }
 .fashionSubtitle {
-  color: #ff9d5e;
+  color: #f412bc;
   letter-spacing: 1px;
   margin-top: 10px;
   /* padding: 10px 10px 10px 4px; */
@@ -60,7 +79,7 @@
 }
 .fashion-content {
   /* margin: 50px; */
-  color: white;
+  color: #fbd4f4;
   text-align: left;
   justify-content: center;
 }
@@ -69,7 +88,7 @@
   color: white;
 }
 .fashion-contact > h3 {
-  color: #ff9d5e;
+  color: #f412bc;
 }
 .fashion-btn {
   float: right;
@@ -87,21 +106,10 @@
   background-color: #fce6d9;
   color: black;
 }
-.fashion-eventsdata {
-  padding: 5rem 0;
-  left: 0px;
-  top: 0px;
 
-  /* background: linear-gradient(180deg, #5f2501 0%, #1f1e1f 100%);
-           */
-  /* background-image: url("../../utils//images/eventbg/fashion.svg"); */
-  /* background-size: cover;
-    background-position: center;
-    background-attachment: fixed; */
-}
 .fashion-items {
   padding: 10px;
-  color: white;
+  color: #fbd4f4;
 }
 
 .flexfashion {
@@ -111,8 +119,8 @@
   align-items: baseline;
 }
 .fashionhead {
-  color: #ff9d5e;
-
+  color: #180c15;
+  font-weight: 600;
   text-align: left;
   align-items: flex-start;
   justify-content: center;
@@ -120,8 +128,8 @@
 .fashionMainContent {
   padding: 20px;
   margin: 50px;
-  background-color: #1f1e1f;
-  background: rgba(228, 189, 157, 0.1);
+  background: #2f0f27;
+  border-radius: 10px;
 }
 .rules {
   margin-top: 10px;
@@ -132,6 +140,7 @@
     font-size: 24px;
   }
   .fashion-top {
+    margin: 2em 0.8em;
     flex-direction: column;
     align-items: flex-start;
   }

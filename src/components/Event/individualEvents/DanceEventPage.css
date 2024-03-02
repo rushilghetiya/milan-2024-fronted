@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
 .dance-title {
   font-size: 3em;
   padding-top: 30px;
@@ -5,12 +7,13 @@
   word-wrap: break-word;
   hyphens: auto;
   white-space: normal;
-  font-family: mars;
+  font-family: "Raleway", sans-serif;
   font-weight: bold;
   justify-content: center;
   text-align: center;
-  color: white;
-  text-shadow: 4px 8px 4px rgba(73, 76, 82, 0.6);
+  color: #f8ddc7;
+  text-shadow: 0px 0px 7px #f8cba6, 0px 0px 10px #ec842c, 0px 0px 21px #ec842c,
+    0px 0px 42px #ec842c, 0px 0px 82px #ec842c, 0px 0px 92px #ec842c;
 }
 
 .dance-description {
@@ -26,7 +29,10 @@
   color: white;
 }
 .dance-top {
-  margin-top: 30px;
+  margin: 2em 3em;
+  padding: 1em;
+  border-radius: 10px;
+  background: #8b4b14;
   display: flex;
   /* flex-wrap: wrap; */
   flex-direction: row;
@@ -43,7 +49,7 @@
   /* color: white; */
 }
 .danceSubtitle {
-  color: #ff9d5e;
+  color: #ec842c;
   letter-spacing: 1px;
   margin-top: 10px;
   /* padding: 10px 10px 10px 4px; */
@@ -88,10 +94,10 @@
   color: black;
 }
 .dance-eventsdata {
-  margin: 0 2rem;
-  padding: 5rem 0;
+  padding: 5rem 2rem;
   left: 0px;
   top: 0px;
+  background: #1e1208;
 
   /* background: linear-gradient(180deg, #5f2501 0%, #1f1e1f 100%);
            */
@@ -112,8 +118,8 @@
   align-items: baseline;
 }
 .dancehead {
-  color: #ff9d5e;
-
+  color: #1e1208;
+  font-weight: 600;
   text-align: left;
   align-items: flex-start;
   justify-content: center;
@@ -122,9 +128,11 @@
   padding: 20px;
   margin: 50px;
   background-color: #1f1e1f;
-  background: rgba(228, 189, 157, 0.1);
+  background: #341d0a;
+  border-radius: 10px;
 }
 .rules {
+  color: #fad8fa;
   margin-top: 10px;
 }
 
@@ -133,6 +141,7 @@
     font-size: 24px;
   }
   .dance-top {
+    margin: 2em 0.8em;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -142,6 +151,5 @@
   .dance-eventsdata {
     background-image: url("../../utils//images/event-gb-mob/dance.svg");
     background-attachment: fixed;
-    margin: 0 1rem;
   }
 }

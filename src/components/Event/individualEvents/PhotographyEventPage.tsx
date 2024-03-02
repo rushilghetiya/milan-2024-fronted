@@ -108,8 +108,8 @@ function PhotographyEventPage() {
 
         		<div className='photographyMainContent'>
                     {listData.theme && (
-						<div className='music-judgment'>
-							<h3 className='musicSubtitle'>Theme :</h3>
+						<div className='photography-judgment'>
+							<h3 className='photographySubtitle'>Theme :</h3>
 							<p className='rules'>{listData.theme}</p>
 						</div>
 					)}

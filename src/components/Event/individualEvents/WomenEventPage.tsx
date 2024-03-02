@@ -108,8 +108,8 @@ function WomenEventPage() {
 
         		<div className='womenMainContent'>
                     {listData.description && (
-						<div className='music-judgment'>
-							<h3 className='musicSubtitle'>Description :</h3>
+						<div className='women-judgment'>
+							<h3 className='womenSubtitle'>Description :</h3>
 							<p className='rules'>{listData.description}</p>
 						</div>
 					)}

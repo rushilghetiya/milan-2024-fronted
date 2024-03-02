@@ -4,7 +4,7 @@ const data = [
     name: "Music",
     link: "event/music",
     nameLink: "music",
-    color: "#ffffff",
+    // color: "#ffffff",
     bgImage: "#0d101c",
     // bgImageMobile: require("../utils/images/categories/music/eventlistmbg-music.webp"),
     // bgGradientColor: {
@@ -1532,12 +1532,19 @@ const data = [
     link: "event/literary",
     nameLink: "literary",
     // color: '',
-    // bgImage: require(''),
+    bgImage: "#110313",
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
     // },
-    // eventColor: { backgroundColor: '' },
+    eventColor: {
+      background:
+        "linear-gradient(270deg, rgba(255,25,67,1) 0%, rgba(154,20,65,1) 48%, rgba(90,15,78,1) 100%)",
+    },
+    eventColorEven: {
+      background:
+        "linear-gradient(90deg, rgba(255,25,67,1) 0%, rgba(154,20,65,1) 48%, rgba(90,15,78,1) 100%)",
+    },
     // eventFontColor: { color: ''},
     // eventImg: require(''),
     // eventGradient: {
@@ -1970,12 +1977,19 @@ const data = [
     link: "event/creativearts",
     nameLink: "creativearts",
     // color: '',
-    // bgImage: require(''),
+    bgImage: "#161626",
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
     // },
-    // eventColor: { backgroundColor: '' },
+    eventColor: {
+      background:
+        "linear-gradient(90deg, rgba(54,41,136,1) 0%, rgba(64,40,218,1) 48%, rgba(131,111,255,1) 100%)",
+    },
+    eventColorEven: {
+      background:
+        "linear-gradient(270deg, rgba(54,41,136,1) 0%, rgba(64,40,218,1) 48%, rgba(131,111,255,1) 100%)",
+    },
     // eventImg: require(''),
     // eventGradient: {
     //   background: '',
@@ -2373,12 +2387,19 @@ const data = [
     link: "event/quiz",
     nameLink: "quiz",
     // color: '',
-    // bgImage: require(''),
+    bgImage: "#1d0718",
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
     // },
-    // eventColor: { backgroundColor: '' },
+    eventColor: {
+      background:
+        "linear-gradient(90deg, rgba(52,7,61,1) 0%, rgba(154,55,69,1) 60%, rgba(239,116,92,1) 100%)",
+    },
+    eventColorEven: {
+      background:
+        "linear-gradient(270deg, rgba(52,7,61,1) 0%, rgba(154,55,69,1) 60%, rgba(239,116,92,1) 100%)",
+    },
     // eventImg: require(''),
     // eventGradient: {
     //   background: '',
@@ -2549,12 +2570,19 @@ const data = [
     link: "event/gaming",
     nameLink: "gaming",
     // color: '',
-    // bgImage: require(''),
+    bgImage: "#0d0b04",
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
     // },
-    // eventColor: { backgroundColor: '' },
+    eventColor: {
+      background:
+        "linear-gradient(90deg, rgba(39,116,60,1) 0%, rgba(56,176,151,1) 47%, rgba(221,207,151,1) 100%)",
+    },
+    eventColorEven: {
+      background:
+        "linear-gradient(270deg, rgba(39,116,60,1) 0%, rgba(56,176,151,1) 47%, rgba(221,207,151,1) 100%)",
+    },
     // eventImg: require(''),
     // eventGradient: {
     //   background: '',
@@ -3003,12 +3031,19 @@ const data = [
     link: "event/selfdefence",
     nameLink: "selfdefence",
     // color: '',
-    // bgImage: require(''),
+    bgImage: "#1b0702",
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
     // },
-    // eventColor: { backgroundColor: '' },
+    eventColor: {
+      background:
+        "linear-gradient(90deg, rgba(70,28,18,1) 0%, rgba(199,80,52,1) 65%, rgba(238,141,118,1) 100%)",
+    },
+    eventColorEven: {
+      background:
+        "linear-gradient(270deg, rgba(70,28,18,1) 0%, rgba(199,80,52,1) 65%, rgba(238,141,118,1) 100%)",
+    },
     // eventImg: require(''),
     // eventGradient: {
     //   background: '',
@@ -3269,12 +3304,19 @@ const data = [
     link: "event/astrophilia",
     nameLink: "astrophilia",
     // color: '',
-    // bgImage: require(''),
+    bgImage: "#0e051c",
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
     // },
-    // eventColor: { backgroundColor: '' },
+    eventColor: {
+      background:
+        "linear-gradient( 58.2deg,  rgba(40,91,212,1) -3%, rgba(171,53,163,1) 49.3%, rgba(255,204,112,1) 97.7% )",
+    },
+    eventColorEven: {
+      background:
+        "linear-gradient( 238.2deg,  rgba(40,91,212,1) -3%, rgba(171,53,163,1) 49.3%, rgba(255,204,112,1) 97.7% )",
+    },
     // eventImg: require(''),
     // eventGradient: {
     //   background: '',
@@ -3481,12 +3523,19 @@ const data = [
     link: "event/sports",
     nameLink: "sports",
     // color: '',
-    // bgImage: require(''),
+    bgImage: "#160108",
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
     // },
-    // eventColor: { backgroundColor: '' },
+    eventColor: {
+      background:
+        "linear-gradient(90deg, rgba(22,1,8,1) 0%, rgba(241,60,119,1) 65%, rgba(252,205,134,1) 100%)",
+    },
+    eventColorEven: {
+      background:
+        "linear-gradient(270deg, rgba(22,1,8,1) 0%, rgba(241,60,119,1) 65%, rgba(252,205,134,1) 100%)",
+    },
     // eventImg: require(''),
     // eventGradient: {
     //   background: '',
@@ -3793,12 +3842,19 @@ const data = [
     link: "event/photography",
     nameLink: "photography",
     // color: '',
-    // bgImage: require(''),
+    bgImage: "#02071b",
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
     // },
-    // eventColor: { backgroundColor: '' },
+    eventColor: {
+      background:
+        "linear-gradient(90deg, rgba(4,27,126,1) 20%, rgba(7,244,158,1) 100%)",
+    },
+    eventColorEven: {
+      background:
+        "linear-gradient(270deg, rgba(4,27,126,1) 20%, rgba(7,244,158,1) 100%)",
+    },
     // eventImg: require(''),
     // eventGradient: {
     //   background: '',
@@ -4045,12 +4101,19 @@ const data = [
     link: "event/rotaract",
     nameLink: "rotaract",
     // color: '',
-    // bgImage: require(''),
+    bgImage: "#20001d",
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
     // },
-    // eventColor: { backgroundColor: '' },
+    eventColor: {
+      background:
+        "linear-gradient(90deg, rgba(32,0,29,1) 0%, rgba(239,50,217,1) 32%, rgba(233,255,137,1) 100%)",
+    },
+    eventColorEven: {
+      background:
+        "linear-gradient(270deg, rgba(32,0,29,1) 0%, rgba(239,50,217,1) 32%, rgba(233,255,137,1) 100%)",
+    },
     // eventImg: require(''),
     // eventGradient: {
     //   background: '',
@@ -4248,12 +4311,19 @@ const data = [
     link: "event/social",
     nameLink: "social",
     // color: '',
-    // bgImage: require(''),
+    bgImage: "#200209",
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
     // },
-    // eventColor: { backgroundColor: '' },
+    eventColor: {
+      background:
+        "linear-gradient(90deg, rgba(32,2,9,1) 0%, rgba(227,32,30,1) 28%, rgba(240,135,236,1) 100%)",
+    },
+    eventColorEven: {
+      background:
+        "linear-gradient(270deg, rgba(32,2,9,1) 0%, rgba(227,32,30,1) 28%, rgba(240,135,236,1) 100%)",
+    },
     // eventImg: require(''),
     // eventGradient: {
     //   background: '',
@@ -4377,12 +4447,19 @@ const data = [
     link: "event/womenempowerment",
     nameLink: "womenempowerment",
     // color: '',
-    // bgImage: require(''),
+    bgImage: "#070717",
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
     // },
-    // eventColor: { backgroundColor: '' },
+    eventColor: {
+      background:
+        "linear-gradient(90deg, rgba(0,139,163,1) 0%, rgba(139,224,184,1) 67%, rgba(190,255,148,1) 100%)",
+    },
+    eventColorEven: {
+      background:
+        "linear-gradient(270deg, rgba(0,139,163,1) 0%, rgba(139,224,184,1) 67%, rgba(190,255,148,1) 100%)",
+    },
     // eventImg: require(''),
     // eventGradient: {
     //   background: '',
@@ -4499,12 +4576,19 @@ const data = [
     link: "event/rubiks",
     nameLink: "rubiks",
     // color: '',
-    // bgImage: require(''),
+    bgImage: "#0f0900",
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
     // },
-    eventColor: { backgroundColor: "#" },
+    eventColor: {
+      background:
+        "linear-gradient(90deg, rgba(15,9,0,1) 0%, rgba(89,21,12,1) 50%, rgba(231,23,0,1) 100%)",
+    },
+    eventColorEven: {
+      background:
+        "linear-gradient(270deg, rgba(15,9,0,1) 0%, rgba(89,21,12,1) 50%, rgba(231,23,0,1) 100%)",
+    },
     // eventImg: require(''),
     // eventGradient: {
     //   background: '',

@@ -38,7 +38,6 @@ function EventContainer() {
                     style={clubData.eventColorEven}
                   >
                     {/* <img src={clubData.bgImage} className="object-cover w-full h-full"></img> */}
-                    <div className="" />
                     <h1 className="text-[poppins] font-extrabold capitalize" style={clubData.eventTextClr}>{event.title}</h1>
                   </div>
               </Link>
@@ -53,7 +52,6 @@ function EventContainer() {
                     style={clubData.eventColor}
                   >
                     {/* <img src={clubData.bgImage} className="object-cover w-full h-full"></img> */}
-                    <div className="" />
                     <h1 className="text-[poppins] font-extrabold capitalize" style={clubData.eventTextClr}>{event.title}</h1>
                   </div>
               </Link>
