@@ -101,8 +101,8 @@ function RotaractEventPage() {
 
         		<div className='rotaractMainContent'>
                     {listData.theme && (
-						<div className='music-judgment'>
-							<h3 className='musicSubtitle'>Theme :</h3>
+						<div className='rotaract-judgment'>
+							<h3 className='rotaractSubtitle'>Theme :</h3>
 							<p className='rules'>{listData.theme}</p>
 						</div>
 					)}

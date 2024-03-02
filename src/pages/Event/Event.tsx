@@ -1,12 +1,10 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import "./Event.css";
-
 import data from "../../DataList/EventList";
 import { CardBody, CardContainer, CardItem } from "../../components/ui/3d-card";
 // import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom";
 import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
-// import { useQueryClient } from "react-query";
 
 function Event() {
   // const queryClient = useQueryClient();

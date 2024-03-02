@@ -33,7 +33,7 @@ export function InputForm() {
       // send data as json
       console.log(JSON.stringify(data));
       await axios.post(
-        "https://o7gjqg78ql.execute-api.ap-south-1.amazonaws.com/milan-survey",
+        "https://ahsbp62dkzsdpekksrimoahd7e0oqteh.lambda-url.ap-south-1.on.aws/",
         JSON.stringify(data),
         {
           headers: {

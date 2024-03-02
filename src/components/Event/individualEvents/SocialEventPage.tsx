@@ -108,8 +108,8 @@ function SocialEventPage() {
 
         		<div className='socialMainContent'>
                     {listData.description && (
-						<div className='music-judgment'>
-							<h3 className='musicSubtitle'>Description :</h3>
+						<div className='social-judgment'>
+							<h3 className='socialSubtitle'>Description :</h3>
 							<p className='rules'>{listData.description}</p>
 						</div>
 					)}
