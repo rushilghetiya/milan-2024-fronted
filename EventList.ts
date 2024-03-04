@@ -4,8 +4,9 @@ const data = [
     name: "Music",
     link: "event/music",
     nameLink: "music",
-    // color: "#ffffff",
+    color: "#ffffff",
     bgImage: "#0d101c",
+    clubImage: require("../Assets/Images/clubImages/techteam_dsa_musicians_playing_on_a_street_illustrationhigh_det_e6f7abfc-c198-4d34-9545-dd5d2693d33a.png"),
     // bgImageMobile: require("../utils/images/categories/music/eventlistmbg-music.webp"),
     // bgGradientColor: {
     //   background:
@@ -82,9 +83,9 @@ const data = [
         description:
           "West Melodies is a Western Solo singing competition that showcases the individual vocal talents of participants. It provides a platform for budding vocalists to shine.",
         category: "Western Solo",
-        isTeamEvent: false,
+        isTeamEvent: true,
         teamSizeFrontend: "1 participant + 1 accompanist",
-        teamSizeBackend: 0,
+        teamSizeBackend: 2,
         maxCapacity: 60,
         mode: "Offline",
         timeLimit: "4 mins, including soundcheck",
@@ -121,9 +122,9 @@ const data = [
           "Streetside Serenades is a Battle of Bands competition in the Western music category, where bands compete to create the most electrifying musical performance.",
         category: "Western",
         isTeamEvent: true,
-        teamSizeFrontend: "4 to 8 participants",
+        teamSizeFrontend: "4 - 8",
         teamSizeBackend: 8,
-        // maxCapacity: ,
+        maxCapacity: 15,
         mode: "Offline",
         timeLimit: "20 minutes, including soundcheck",
         judgingCriteria:
@@ -159,10 +160,10 @@ const data = [
         description:
           "Eastern Echoes: Solo Showcase is an Eastern Solo singing competition, providing a stage for individuals to showcase their vocal talents in Eastern music.",
         category: "Eastern Solo",
-        isTeamEvent: false,
+        isTeamEvent: true,
         teamSizeFrontend: "1 participant + 1 accompanist",
-        teamSizeBackend: 0,
-        // maxCapacity: ,
+        teamSizeBackend: 2,
+        maxCapacity: 50,
         mode: "Offline",
         timeLimit: "4 mins, including soundcheck",
         judgingCriteria:
@@ -198,9 +199,9 @@ const data = [
           "Sounds of the Bazaar: Eastern Battle is a Battle of Bands competition in the Eastern music category, where bands compete to create a mesmerizing musical performance.",
         category: "Eastern",
         isTeamEvent: true,
-        teamSizeFrontend: "4 to 8 participants",
+        teamSizeFrontend: "4 - 8",
         teamSizeBackend: 8,
-        // maxCapacity: ,
+        maxCapacity: 15,
         mode: "Offline",
         timeLimit: "20 minutes, including soundcheck",
         judgingCriteria:
@@ -238,8 +239,8 @@ const data = [
         category: null,
         isTeamEvent: true,
         teamSizeFrontend: "2 participants + 1 accompanist",
-        teamSizeBackend: 2,
-        // maxCapacity: ,
+        teamSizeBackend: 3,
+        maxCapacity: 20,
         mode: "Offline",
         timeLimit: "5 Minutes",
         judgingCriteria:
@@ -278,7 +279,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 30,
         mode: "Offline",
         timeLimit: "3 Minutes",
         judgingCriteria:
@@ -317,7 +318,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 35,
         mode: "Offline",
         timeLimit: "5 Minutes, including setup & soundcheck",
         judgingCriteria:
@@ -355,7 +356,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 45,
         mode: "Offline",
         timeLimit: "2 Minutes",
         judgingCriteria:
@@ -392,7 +393,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 30,
         mode: "Online",
         timeLimit: "60 minutes (live, online event hosted on Meet/Zoom)",
         judgingCriteria:
@@ -435,7 +436,7 @@ const data = [
         isTeamEvent: true,
         teamSizeFrontend: "3",
         teamSizeBackend: 3,
-        // maxCapacity: ,
+        maxCapacity: 40,
         mode: "Offline",
         timeLimit: "Variable(depending on rounds)",
         judgingCriteria: null,
@@ -466,6 +467,7 @@ const data = [
     nameLink: "dance",
     // color: '',
     bgImage: "#1e1208",
+    clubImage: require("../Assets/Images/clubImages/techteam_dsa_modern_dancers_dancing_on_a_street_illustrationhig_674196ee-3e72-4ea9-ac3f-c553e7593d5a.png"),
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
@@ -498,7 +500,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 40,
         category: null,
         timeLimit: "2(min) - 3(max) mins",
         judgingCriteria:
@@ -537,7 +539,7 @@ const data = [
         isTeamEvent: true,
         teamSizeFrontend: "8 - 30",
         teamSizeBackend: 30,
-        // maxCapacity: ,
+        maxCapacity: 15,
         category: "1 team vs 1 team",
         timeLimit: "5 - 7 mins(+1 min setup & clearance time)",
         judgingCriteria:
@@ -575,7 +577,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 30,
         category: null,
         timeLimit: "1(min) - 2(max) mins",
         judgingCriteria:
@@ -613,7 +615,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 25,
         category: null,
         timeLimit: "2(min) - 3(max) mins",
         judgingCriteria:
@@ -651,7 +653,7 @@ const data = [
         isTeamEvent: true,
         teamSizeFrontend: "8-25",
         teamSizeBackend: 25,
-        // maxCapacity: ,
+        maxCapacity: 15,
         category: null,
         timeLimit: "3(min) - 8(max) mins(+1 min setup & clearance time)",
         judgingCriteria:
@@ -688,7 +690,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 70,
         category: "1 vs 1",
         timeLimit: null,
         judgingCriteria:
@@ -723,6 +725,7 @@ const data = [
     nameLink: "fashion",
     // color: '',
     bgImage: "#180c15",
+    clubImage: require("../Assets/Images/clubImages/techteam_dsa_fashion_models_walking_down_a_runway_street_perfor_ad0f8de1-e027-4cd1-9568-1f652d1f2652.png"),
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
@@ -757,7 +760,7 @@ const data = [
         isTeamEvent: true,
         teamSizeFrontend: "2",
         teamSizeBackend: 2,
-        // maxCapacity: ,
+        maxCapacity: 30,
         mode: "Offline",
         timeLimit: "1(min) - 2(max) mins",
         segments: null,
@@ -806,7 +809,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 30,
         mode: "Offline",
         timeLimit: "15 mins(10 mins to perform & 5 mins for Q&A round)",
         segments: null,
@@ -851,7 +854,7 @@ const data = [
         isTeamEvent: true,
         teamSizeFrontend: "12-15",
         teamSizeBackend: 15,
-        // maxCapacity: ,
+        maxCapacity: 25,
         mode: "Offline",
         timeLimit: "10 minutes to perform & 5 minutes for Q&A round",
         segments: [
@@ -907,7 +910,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 30,
         mode: "Offline",
         timeLimit: "1(min) - 2(max) mins",
         segments: null,
@@ -953,7 +956,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 30,
         mode: "Online",
         timeLimit: "1(min) - 2(max) mins",
         segments: null,
@@ -998,7 +1001,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 30,
         mode: "Online",
         timeLimit: "1(min) - 2(max) mins",
         segments: null,
@@ -1038,6 +1041,7 @@ const data = [
     nameLink: "moviesanddramatics",
     // color: "#001709",
     bgImage: "#021309",
+    clubImage: require("../Assets/Images/clubImages/techteam_dsa_actors_on_a_stage_inside_a_theatre_illustrationhig_1cbb796f-0047-4dc8-9b65-5f4ba70586e8.png"),
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
@@ -1070,7 +1074,7 @@ const data = [
         isTeamEvent: true,
         teamSizeFrontend: "15-20",
         teamSizeBackend: 20,
-        // maxCapacity: ,
+        maxCapacity: 100,
         mode: "Offline",
         description:
           "Imagine a world where you can be anyone, anywhere, at any time, where dreams come true and anything is possible. That is the magic of stage play. Prepare to be spellbound as the curtains rise to reveal theatrical brilliance! The stage play event is a journey into the extraordinary, where every emotion, every word, and every act ignites the stage with passion and storytelling.",
@@ -1115,7 +1119,7 @@ const data = [
         isTeamEvent: true,
         teamSizeFrontend: "15-20",
         teamSizeBackend: 20,
-        // maxCapacity: ,
+        maxCapacity: 300,
         mode: "Offline",
         description:
           "Have you ever pictured a stage that is under the open sky, with the bustling city as your backdrop? That is the magic of street play! Street plays are a raw form of dramatics which is a unique and exciting form of theater that performs to the public in unexpected places. It is often social commentaries or political satire, and they can be a powerful tool for raising awareness about important issues.",
@@ -1160,7 +1164,7 @@ const data = [
         isTeamEvent: true,
         teamSizeFrontend: "12(maximum)",
         teamSizeBackend: 12,
-        // maxCapacity: ,
+        maxCapacity: 300,
         mode: "Offline",
         description:
           "Mime is a silent performance art form in which groups of performers use facial expressions, gestures, and body language to tell stories and create characters. Mime performances can be humorous, dramatic, or even abstract. But no matter what the genre is, they are always visually stunning and emotionally engaging.",
@@ -1203,7 +1207,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 50,
         mode: "Offline",
         description:
           "What if you could step inside someone's mind and see the world through their eyes? That's the power of monologue. A monologue is a speech delivered by one character, and it can be used to reveal the character's thoughts, feelings, and motivations. It can be a powerful tool for storytelling and it can also be a lot of fun to perform.",
@@ -1243,7 +1247,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 30,
         mode: "Offline",
         description:
           "Experience the power of concise narratives as these mini-masterpieces unfold before your eyes. It's a journey through the art of storytelling in its most condensed and captivating form.",
@@ -1277,7 +1281,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 30,
         mode: "Offline",
         description:
           "Get ready to pen down your words and sentences into scripts for our first-time event. You will be provided a theme and time limit to write a script at the venue, Judging will be on the story, originality, theme utility, story arc.",
@@ -1310,7 +1314,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 150,
         mode: "Offline",
         description:
           "Step into a world of boundless talent, laughter, and entertainment at our variety show event! It's a spectacular fusion of music, dance, comedy, and more, all in one extraordinary place. Our stage is a canvas for creativity, where each act is a masterpiece waiting to be unveiled.",
@@ -1342,11 +1346,11 @@ const data = [
         // date: '',
         // time: '',
         // venue: '',
-        ktrStudentsAllowed: true,
+        ktrStudentsAllowed: false,
         isTeamEvent: true,
         teamSizeFrontend: "Solo or team of upto 4 members",
         teamSizeBackend: 4,
-        // maxCapacity: ,
+        maxCapacity: 80,
         mode: "Offline",
         description:
           "Improv event acts as an unscripted, uproarious adventure that is a whirlwind of quick wit, spontaneous humor, and on-the-spot creativity that will have you in stitches. Be part of the magic as the judge's suggestions drive the hilarity and unpredictability. It's an event where laughter reigns supreme, and every moment is a surprise.",
@@ -1384,7 +1388,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 40,
         mode: "Offline",
         description:
           "Stand-up Comedy is an event where everyday life meets extraordinary humor, promising a while of unforgettable entertainment and endless giggles to the live audience.",
@@ -1425,7 +1429,7 @@ const data = [
         isTeamEvent: true,
         teamSizeFrontend: "6(maximum)",
         teamSizeBackend: 6,
-        // maxCapacity: ,
+        maxCapacity: 50,
         mode: "Offline",
         description:
           "The stage is set for creativity, spontaneity, and humour to collide in the most unexpected and hilarious ways. Get your teams and unleash their inner advertising wizards, crafting unforgettable moments in the blink of an eye. Fasten your seatbelts for a rollercoaster of laughter, ingenuity, and unforgettable pitches that will leave you in awe.",
@@ -1461,11 +1465,11 @@ const data = [
         // date: '',
         // time: '',
         // venue: '',
-        ktrStudentsAllowed: true,
+        ktrStudentsAllowed: false,
         isTeamEvent: true,
         teamSizeFrontend: "2(minimum)",
         teamSizeBackend: 2,
-        // maxCapacity: ,
+        maxCapacity: 50,
         mode: "Offline",
         description:
           "We welcome you are to the latest and newest event of MILAN , where you use your Cinema knowledge. There will be 2 rounds. Round 1: Pictionary – we give you famous films from around the world to a team member, who will draw the film and give to the drawing hints to the other members to guess the film. Round 2: Dum charades – the old famous theatre game where we give a movie and a team member should act and other team members should guess it",
@@ -1532,19 +1536,13 @@ const data = [
     link: "event/literary",
     nameLink: "literary",
     // color: '',
-    bgImage: "#110313",
+    // bgImage: require(''),
+    clubImage: require("../Assets/Images/clubImages/techteam_dsa_open_book_with_poems_on_a_table_inside_a_library_f_72fca714-732e-42d3-9b4d-baf0e4cc6f8a.png"),
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
     // },
-    eventColor: {
-      background:
-        "linear-gradient(270deg, rgba(255,25,67,1) 0%, rgba(154,20,65,1) 48%, rgba(90,15,78,1) 100%)",
-    },
-    eventColorEven: {
-      background:
-        "linear-gradient(90deg, rgba(255,25,67,1) 0%, rgba(154,20,65,1) 48%, rgba(90,15,78,1) 100%)",
-    },
+    // eventColor: { backgroundColor: '' },
     // eventFontColor: { color: ''},
     // eventImg: require(''),
     // eventGradient: {
@@ -1565,7 +1563,7 @@ const data = [
         isTeamEvent: true,
         teamSizeFrontend: "2",
         teamSizeBackend: 2,
-        // maxCapacity: ,
+        maxCapacity: 30,
         mode: "Offline",
         description:
           "Two speakers represent each of the four teams and will have to give a speech for seven and four minutes respectively. The following chart describes the basic format and time limits. As you will see from the chart, each speaker is given a unique title.",
@@ -1643,7 +1641,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 30,
         mode: "Offline",
         description:
           "Just-A-Minute (or JAM) is an all-round-fun event that is all about the control of the mind over the mouth. You have to make it through sixty seconds of non-stop talking without hesitation, repetition, or deviation.",
@@ -1690,7 +1688,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 30,
         mode: "Offline",
         description: null,
         descriptionTips: null,
@@ -1736,7 +1734,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 30,
         mode: "Offline",
         description: null,
         descriptionTips: null,
@@ -1777,7 +1775,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 30,
         mode: "Offline",
         description: null,
         descriptionTips: null,
@@ -1816,7 +1814,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 30,
         mode: "Offline",
         description: null,
         descriptionTips: null,
@@ -1943,7 +1941,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 40,
         mode: "Online",
         description:
           '"Smack a Little Laugh a Little" is a phrase used to describe a type of comedic performance that involves both physical comedy and witty humor. The term suggests a light-hearted and playful approach to comedy that combines elements of slapstick humor with clever one-liners and playful banter. The goal of this type of performance is to entertain and bring laughter to the audience. The phrase is often used as the title of a collection of comic scripts or a live performance that incorporates this type of humor.',
@@ -1977,19 +1975,13 @@ const data = [
     link: "event/creativearts",
     nameLink: "creativearts",
     // color: '',
-    bgImage: "#161626",
+    // bgImage: require(''),
+    clubImage: require("../Assets/Images/clubImages/techteam_dsa_painter_painting_on_a_canvas_of_a_street_illustrat_abda5274-d6fb-4160-b367-96d1d9bad65d.png"),
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
     // },
-    eventColor: {
-      background:
-        "linear-gradient(90deg, rgba(54,41,136,1) 0%, rgba(64,40,218,1) 48%, rgba(131,111,255,1) 100%)",
-    },
-    eventColorEven: {
-      background:
-        "linear-gradient(270deg, rgba(54,41,136,1) 0%, rgba(64,40,218,1) 48%, rgba(131,111,255,1) 100%)",
-    },
+    // eventColor: { backgroundColor: '' },
     // eventImg: require(''),
     // eventGradient: {
     //   background: '',
@@ -2006,7 +1998,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 30,
         mode: "Offline",
         description:
           "Participants have to sculpt using aluminum foil within the given time limit.",
@@ -2045,7 +2037,7 @@ const data = [
         isTeamEvent: true,
         teamSizeFrontend: "2",
         teamSizeBackend: 2,
-        // maxCapacity: ,
+        maxCapacity: 30,
         mode: "Offline",
         description:
           "A participant has to draw for 1 minute and switch the artwork with their fellow team member.",
@@ -2084,7 +2076,7 @@ const data = [
         isTeamEvent: true,
         teamSizeFrontend: "3",
         teamSizeBackend: 3,
-        // maxCapacity: ,
+        maxCapacity: 30,
         mode: "Offline",
         description:
           "First member will be given a theme; it won't be shared with other two members. The first member will try to give hints of the theme without disclosing it completely only using drawings. The second member will deduce as much as he can and try to convey it to the third member in the same manner. The third member will now try to complete the theme. Other members don't get to see what the previous members have created till it is their turn.",
@@ -2122,7 +2114,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 30,
         mode: "Offline",
         description:
           "Participants should create an artwork with three different mediums in it. (For example: pencil sketch, painting, crayons).",
@@ -2159,7 +2151,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 30,
         mode: "Offline",
         description:
           "Participants have to make a portrait without taking the pen off the paper.",
@@ -2196,7 +2188,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 30,
         mode: "Offline",
         description:
           "Participants should create a portrait by scribbling on the paper with a ballpoint pen.",
@@ -2235,7 +2227,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 30,
         mode: "Offline",
         description:
           "We will present participants with a live model wearing a distinctive outfit within a designated setting. Their task will be to create a painted representation of the model using any available medium.",
@@ -2273,7 +2265,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 30,
         mode: "Offline",
         description:
           "Artists will be challenged to create portraits using words, letters, or typography as the primary medium to depict a person's identity, emotions, or characteristics.",
@@ -2311,7 +2303,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 30,
         mode: "Offline",
         description:
           "Artists have to take a picture from the surrounding as well as to create a caricature of their inspiration.",
@@ -2349,7 +2341,7 @@ const data = [
         isTeamEvent: false,
         teamSizeFrontend: "Solo",
         teamSizeBackend: 0,
-        // maxCapacity: ,
+        maxCapacity: 30,
         mode: "Online",
         description:
           "Participants have to make a mandala pattern using bindi's within the given time limit",
@@ -2387,19 +2379,13 @@ const data = [
     link: "event/quiz",
     nameLink: "quiz",
     // color: '',
-    bgImage: "#1d0718",
+    // bgImage: require(''),
+    clubImage: require("../Assets/Images/clubImages/techteam_dsa_quiz_game_show_illustration_high_detail_3771b45c-1df4-4068-8dc5-d66cf5c8aaf8.png"),
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
     // },
-    eventColor: {
-      background:
-        "linear-gradient(90deg, rgba(52,7,61,1) 0%, rgba(154,55,69,1) 60%, rgba(239,116,92,1) 100%)",
-    },
-    eventColorEven: {
-      background:
-        "linear-gradient(270deg, rgba(52,7,61,1) 0%, rgba(154,55,69,1) 60%, rgba(239,116,92,1) 100%)",
-    },
+    // eventColor: { backgroundColor: '' },
     // eventImg: require(''),
     // eventGradient: {
     //   background: '',
@@ -2417,7 +2403,7 @@ const data = [
         isTeamEvent: true,
         teamSizeFrontend: "Individual / Group of 2",
         teamSizeBackend: 2,
-        // maxCapacity: ,
+        maxCapacity: 50,
         rules: ["● Individual / Group of 2", "● 2 Rounds"],
         note: "Last moment Rules and Format can be changed, Depends on Participation and other things. Convenors hold the right to make changes.",
         contact: [
@@ -2440,7 +2426,7 @@ const data = [
         isTeamEvent: true,
         teamSizeFrontend: "Individual / Team(3 members max)",
         teamSizeBackend: 3,
-        // maxCapacity: ,
+        maxCapacity: 40,
         rules: ["● Individual / Team", "● 2 Rounds", "● All sports question"],
         note: "Last moment Rules and Format can be changed, Depends on Participation and other things. Convenors hold the right to make changes.",
         contact: [
@@ -2463,7 +2449,7 @@ const data = [
         isTeamEvent: true,
         teamSizeFrontend: "Solo / Team(3 members max)",
         teamSizeBackend: 3,
-        // maxCapacity: ,
+        maxCapacity: 35,
         rules: [
           "● Solo / Team",
           "● Buzzer Style Quiz: Participants use buzzers to signal when they believe they know the answer to the location or topic being presented.",
@@ -2496,7 +2482,7 @@ const data = [
         isTeamEvent: true,
         teamSizeFrontend: "Solo / Team(3 members max)",
         teamSizeBackend: 3,
-        // maxCapacity: ,
+        maxCapacity: 40,
         rules: [
           "● Solo / Team",
           "● Each contestant selects a topic of their choice before the round begins. The chosen topic can be anything from sports and science to pop culture or history.",
@@ -2525,7 +2511,7 @@ const data = [
         isTeamEvent: true,
         teamSizeFrontend: "3",
         teamSizeBackend: 3,
-        // maxCapacity: ,
+        maxCapacity: 50,
         rules: [
           "● Buzzer Basis:",
           "1. Answers are given out on a buzzer basis. Teams must be quick to buzz in and provide their responses.",
@@ -2570,19 +2556,13 @@ const data = [
     link: "event/gaming",
     nameLink: "gaming",
     // color: '',
-    bgImage: "#0d0b04",
+    // bgImage: require(''),
+    clubImage: require("../Assets/Images/clubImages/techteam_dsa_esports_gaming_tournament_illustration_high_detail_85bb1c2c-ed2b-43b8-b062-38cecdaea106.png"),
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
     // },
-    eventColor: {
-      background:
-        "linear-gradient(90deg, rgba(39,116,60,1) 0%, rgba(56,176,151,1) 47%, rgba(221,207,151,1) 100%)",
-    },
-    eventColorEven: {
-      background:
-        "linear-gradient(270deg, rgba(39,116,60,1) 0%, rgba(56,176,151,1) 47%, rgba(221,207,151,1) 100%)",
-    },
+    // eventColor: { backgroundColor: '' },
     // eventImg: require(''),
     // eventGradient: {
     //   background: '',
@@ -3031,19 +3011,13 @@ const data = [
     link: "event/selfdefence",
     nameLink: "selfdefence",
     // color: '',
-    bgImage: "#1b0702",
+    // bgImage: require(''),
+    clubImage: require("../Assets/Images/clubImages/techteam_dsa_MMA_fight_in_boxing_ring_illustration_high_detail_9d61383f-0cb3-4a92-8027-8b39417be9f0.png"),
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
     // },
-    eventColor: {
-      background:
-        "linear-gradient(90deg, rgba(70,28,18,1) 0%, rgba(199,80,52,1) 65%, rgba(238,141,118,1) 100%)",
-    },
-    eventColorEven: {
-      background:
-        "linear-gradient(270deg, rgba(70,28,18,1) 0%, rgba(199,80,52,1) 65%, rgba(238,141,118,1) 100%)",
-    },
+    // eventColor: { backgroundColor: '' },
     // eventImg: require(''),
     // eventGradient: {
     //   background: '',
@@ -3304,19 +3278,13 @@ const data = [
     link: "event/astrophilia",
     nameLink: "astrophilia",
     // color: '',
-    bgImage: "#0e051c",
+    // bgImage: require(''),
+    clubImage: require("../Assets/Images/clubImages/techteam_dsa_astrophiliawatching_the_stars_through_telescoe_ill_a111e7ae-4da1-4d14-9dc1-ab73f818035a.png"),
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
     // },
-    eventColor: {
-      background:
-        "linear-gradient( 58.2deg,  rgba(40,91,212,1) -3%, rgba(171,53,163,1) 49.3%, rgba(255,204,112,1) 97.7% )",
-    },
-    eventColorEven: {
-      background:
-        "linear-gradient( 238.2deg,  rgba(40,91,212,1) -3%, rgba(171,53,163,1) 49.3%, rgba(255,204,112,1) 97.7% )",
-    },
+    // eventColor: { backgroundColor: '' },
     // eventImg: require(''),
     // eventGradient: {
     //   background: '',
@@ -3523,19 +3491,13 @@ const data = [
     link: "event/sports",
     nameLink: "sports",
     // color: '',
-    bgImage: "#160108",
+    // bgImage: require(''),
+    clubImage: require("../Assets/Images/clubImages/techteam_dsa_playing_football_on_the_streets_of_brazildaysports_8738dc69-6ed8-4b1e-9325-5337bac014de.png"),
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
     // },
-    eventColor: {
-      background:
-        "linear-gradient(90deg, rgba(22,1,8,1) 0%, rgba(241,60,119,1) 65%, rgba(252,205,134,1) 100%)",
-    },
-    eventColorEven: {
-      background:
-        "linear-gradient(270deg, rgba(22,1,8,1) 0%, rgba(241,60,119,1) 65%, rgba(252,205,134,1) 100%)",
-    },
+    // eventColor: { backgroundColor: '' },
     // eventImg: require(''),
     // eventGradient: {
     //   background: '',
@@ -3842,19 +3804,13 @@ const data = [
     link: "event/photography",
     nameLink: "photography",
     // color: '',
-    bgImage: "#02071b",
+    // bgImage: require(''),
+    clubImage: require("../Assets/Images/clubImages/techteam_dsa_photographer_taking_photo_of_city_illustration_hig_795ddf5d-006a-4169-bcc1-37ddcb2d3e5e.png"),
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
     // },
-    eventColor: {
-      background:
-        "linear-gradient(90deg, rgba(4,27,126,1) 20%, rgba(7,244,158,1) 100%)",
-    },
-    eventColorEven: {
-      background:
-        "linear-gradient(270deg, rgba(4,27,126,1) 20%, rgba(7,244,158,1) 100%)",
-    },
+    // eventColor: { backgroundColor: '' },
     // eventImg: require(''),
     // eventGradient: {
     //   background: '',
@@ -4101,19 +4057,13 @@ const data = [
     link: "event/rotaract",
     nameLink: "rotaract",
     // color: '',
-    bgImage: "#20001d",
+    // bgImage: require(''),
+    clubImage: require("../Assets/Images/clubImages/techteam_dsa_rotaract_club_illustration_high_detail_0eaecded-66cd-4841-bed3-ef8356d76917.png"),
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
     // },
-    eventColor: {
-      background:
-        "linear-gradient(90deg, rgba(32,0,29,1) 0%, rgba(239,50,217,1) 32%, rgba(233,255,137,1) 100%)",
-    },
-    eventColorEven: {
-      background:
-        "linear-gradient(270deg, rgba(32,0,29,1) 0%, rgba(239,50,217,1) 32%, rgba(233,255,137,1) 100%)",
-    },
+    // eventColor: { backgroundColor: '' },
     // eventImg: require(''),
     // eventGradient: {
     //   background: '',
@@ -4311,19 +4261,13 @@ const data = [
     link: "event/social",
     nameLink: "social",
     // color: '',
-    bgImage: "#200209",
+    // bgImage: require(''),
+    clubImage: require("../Assets/Images/clubImages/techteam_dsa_social_activities_like_blood_donation_and_pet_adop_be62cdc8-2b90-4a6b-bc5f-0678ff69c3ed.png"),
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
     // },
-    eventColor: {
-      background:
-        "linear-gradient(90deg, rgba(32,2,9,1) 0%, rgba(227,32,30,1) 28%, rgba(240,135,236,1) 100%)",
-    },
-    eventColorEven: {
-      background:
-        "linear-gradient(270deg, rgba(32,2,9,1) 0%, rgba(227,32,30,1) 28%, rgba(240,135,236,1) 100%)",
-    },
+    // eventColor: { backgroundColor: '' },
     // eventImg: require(''),
     // eventGradient: {
     //   background: '',
@@ -4447,19 +4391,13 @@ const data = [
     link: "event/womenempowerment",
     nameLink: "womenempowerment",
     // color: '',
-    bgImage: "#070717",
+    // bgImage: require(''),
+    clubImage: require("../Assets/Images/clubImages/techteam_dsa_women_empowerement_illustration_high_detail_124312d3-bee0-483c-84bb-b678057ea7a9.png"),
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
     // },
-    eventColor: {
-      background:
-        "linear-gradient(90deg, rgba(0,139,163,1) 0%, rgba(139,224,184,1) 67%, rgba(190,255,148,1) 100%)",
-    },
-    eventColorEven: {
-      background:
-        "linear-gradient(270deg, rgba(0,139,163,1) 0%, rgba(139,224,184,1) 67%, rgba(190,255,148,1) 100%)",
-    },
+    // eventColor: { backgroundColor: '' },
     // eventImg: require(''),
     // eventGradient: {
     //   background: '',
@@ -4576,19 +4514,13 @@ const data = [
     link: "event/rubiks",
     nameLink: "rubiks",
     // color: '',
-    bgImage: "#0f0900",
+    // bgImage: require(''),
+    clubImage: require("../Assets/Images/clubImages/techteam_dsa_colossal_rubiks_cube_in_the_middle_of_the_city_ill_8426cca3-33eb-49f5-aead-d87bd159f627.png"),
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
     // },
-    eventColor: {
-      background:
-        "linear-gradient(90deg, rgba(15,9,0,1) 0%, rgba(89,21,12,1) 50%, rgba(231,23,0,1) 100%)",
-    },
-    eventColorEven: {
-      background:
-        "linear-gradient(270deg, rgba(15,9,0,1) 0%, rgba(89,21,12,1) 50%, rgba(231,23,0,1) 100%)",
-    },
+    eventColor: { backgroundColor: "#" },
     // eventImg: require(''),
     // eventGradient: {
     //   background: '',
