@@ -3,13 +3,6 @@ import  { useEffect, useState } from "react";
 import "./Header.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "/Images/XXIV.webp";
-<<<<<<< HEAD
-import useUser from "@/features/authentication/useUser";
-import useLogout from "@/features/authentication/useLogout";
-import { useQueryClient } from "@tanstack/react-query";
-=======
-
->>>>>>> ed3356c2f7994dc11bd00e84670bb7bff9a8620f
 import { Link } from "react-router-dom";
 
 const Header = () => {
