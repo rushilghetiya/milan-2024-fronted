@@ -2,7 +2,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import data from "@/DataList/EventList";
-import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom";
 import "./EventContainer.css";
 function EventContainer() {

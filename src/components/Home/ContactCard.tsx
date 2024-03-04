@@ -1,5 +1,4 @@
 import { Mail } from 'lucide-react';
-import React from 'react'
 
 
 interface ContactCardProps {
