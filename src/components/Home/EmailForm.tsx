@@ -31,7 +31,6 @@ export function InputForm() {
   async function onSubmit(data: z.infer<typeof FormSchema>) {
     try {
       // send data as json
-      console.log(JSON.stringify(data));
       await axios.post(
         "https://ahsbp62dkzsdpekksrimoahd7e0oqteh.lambda-url.ap-south-1.on.aws/",
         JSON.stringify(data),
@@ -43,7 +42,7 @@ export function InputForm() {
       );
       toast({
         title: "Success!",
-        description: "Check your inbox for your own personalised invite!",
+        description: "We are looking forward to sending you a specially crafted invitation for Milan soon.",
       });
     } catch (error) {
       toast({ title: "Success!", description: "Thankyou for your input!" });
@@ -65,7 +64,7 @@ export function InputForm() {
               <FormControl>
                 <Input placeholder="your-email@example.com" {...field} />
               </FormControl>
-              <FormDescription>
+              <FormDescription className="text-white ">
                 Enter Your Email For Personalised Invite!
               </FormDescription>
               <FormMessage />
