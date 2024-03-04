@@ -3,7 +3,6 @@ import  { useEffect, useState } from "react";
 import "./Header.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "/Images/XXIV.webp";
-
 import { Link } from "react-router-dom";
 
 const Header = () => {

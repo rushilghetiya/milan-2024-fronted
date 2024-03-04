@@ -67,14 +67,17 @@
 
 @media (max-width: 840px) {
   .events-container {
-    margin: 5em 2.5em;
+    margin: 1em 0.5em;
   }
 
   .event-card {
+    max-height: 150px;
     font-size: 1.7em;
   }
 
   .event-card-even {
+    max-height: 150px;
     font-size: 1.7em;
   }
+
 }

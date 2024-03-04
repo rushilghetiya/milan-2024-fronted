@@ -1,33 +1,33 @@
 [
   {
     "name": "Milan",
-    "url": "./src/assets/images/luck.webp",
+    "url": "/Images/luck.webp",
     "text_color": "black"
   },
   {
     "name": "मिलन",
-    "url": "./src/assets/images/lucknow.webp",
+    "url": "/Images/lucknow.webp",
     "text_color": "black"
   },
   {
     "name": "மிலன்",
-    "url": "./src/assets/images/chennai.webp",
+    "url": "/Images/chennai.webp",
     "text_color": "black"
   },
   {
     "name": "మిలన్",
-    "url": "./src/assets/images/hydr.webp",
+    "url": "/Images/hydr.webp",
     "text_color": "black"
   },
   {
     "name": "મિલાન",
-    "url": "./src/assets/images/guj.webp",
+    "url": "/Images/guj.webp",
     "text_color": "black"
   },
  
   {
     "name": "মিলান",
-    "url": "./src/assets/images/raj.webp",
+    "url": "/Images/raj.webp",
     "text_color": "black"
   }
 ]
