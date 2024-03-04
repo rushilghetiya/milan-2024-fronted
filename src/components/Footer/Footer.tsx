@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 // import logo from "./DSAWhite-06-2.png";
 import { BsInstagram, BsLinkedin, BsYoutube } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
-import logo from "../../Assets/Images/XXIV.webp";
+import logo from "/Images/XXIV.webp";
 
 
 const Footer = () => {

@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import "./Header.css";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../../assets/Images/XXIV.webp";
+import logo from "/Images/XXIV.webp";
 import useUser from "@/features/authentication/useUser";
 import useLogout from "@/features/authentication/useLogout";
 import { useQueryClient } from "@tanstack/react-query";
