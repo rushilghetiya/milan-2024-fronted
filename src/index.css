@@ -101,7 +101,7 @@ body::-webkit-scrollbar {
 
 @font-face {
 	font-family: "tamil";
-	src: url("./Assets/fonts/tamil/VANAVIL-Avvaiyar\ Regular.otf");
+	src: url("/fonts/tamil/VANAVIL-Avvaiyar\ Regular.otf");
 	font-weight: 400;
 	font-style: normal;
 }
