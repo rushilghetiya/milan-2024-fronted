@@ -142,14 +142,14 @@ const cards = [
     content: <SkeletonOne />,
     className: "col-span-1",
     thumbnail:
-      "/images/timeline/1milan20.jpg",
+      "/Images/timeline/1milan20.jpg",
   },
   {
     id: 2,
     content: <SkeletonTwo />,
     className: "md:col-span-2",
     thumbnail:
-    "/images/timeline/1milan18.jpg",
+    "/Images/timeline/1milan18.jpg",
 
   },
   {
@@ -158,7 +158,7 @@ const cards = [
     className: "md:col-span-2",
 
     thumbnail:
-    "/images/timeline/1milan17.jpg",
+    "/Images/timeline/1milan17.jpg",
 
   },
   {
@@ -166,7 +166,7 @@ const cards = [
     content: <SkeletonFour />,
     className: "col-span-1",
     thumbnail:
-    "/images/timeline/1milan16.jpg",
+    "/Images/timeline/1milan16.jpg",
 
   },
  
@@ -175,7 +175,7 @@ const cards = [
     content: <SkeletonFive />,
     className: "col-span-1",
     thumbnail:
-    "/images/timeline/2milan14.jpg",
+    "/Images/timeline/2milan14.jpg",
 
   },
   {
@@ -184,7 +184,7 @@ const cards = [
     className: "md:col-span-2",
 
     thumbnail:
-    "/images/timeline/1milan15.jpg",
+    "/Images/timeline/1milan15.jpg",
 
   },
   {
@@ -192,7 +192,7 @@ const cards = [
     content: <SkeletonSeven />,
     className: "col-span-1",
     thumbnail:
-    "/images/timeline/1milan10.jpg",
+    "/Images/timeline/1milan10.jpg",
 
   },
  
@@ -201,7 +201,7 @@ const cards = [
     content: <SkeletonEight />,
     className: "col-span-1",
     thumbnail:
-    "/images/timeline/1milan9.jpg",
+    "/Images/timeline/1milan9.jpg",
 
   },
   {
@@ -211,7 +211,7 @@ const cards = [
 
 
     thumbnail:
-    "/images/timeline/1milan8.jpg",
+    "/Images/timeline/1milan8.jpg",
 
   },
 
