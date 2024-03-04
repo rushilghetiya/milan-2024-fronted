@@ -31,18 +31,20 @@ export function InputForm() {
   async function onSubmit(data: z.infer<typeof FormSchema>) {
     try {
       // send data as json
-      await axios.post(
-        "https://ahsbp62dkzsdpekksrimoahd7e0oqteh.lambda-url.ap-south-1.on.aws/",
-        JSON.stringify(data),
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
+      const config = {
+        method: "post",
+        maxBodyLength: Infinity,
+        url: "https://0nx6rp84xd.execute-api.ap-south-1.amazonaws.com/prod/milan-survey",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        data: JSON.stringify(data),
+      };
+       await axios.request(config);
       toast({
-        title: "Success!",
-        description: "We are looking forward to sending you a specially crafted invitation for Milan soon.",
+        title: "Thank You!",
+        description:
+          "We are looking forward to sending you a specially crafted invitation for Milan soon.",
       });
     } catch (error) {
       toast({ title: "Success!", description: "Thankyou for your input!" });

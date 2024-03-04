@@ -23,7 +23,7 @@ function Event() {
   ];
 
   return (
-    <div className="eventContainer">
+    <div className="eventContainer ">
       <div className="event-top">
         <h1 className='text-white text-center text-[3rem] uppercase font-["Unbounded",sans-serif] font-extrabold tracking-wider pt-[3rem]'>
           Events
@@ -32,7 +32,7 @@ function Event() {
           Tighten Your Seatbelts!
         </p>
       </div>
-      <div className="club-container">
+      <div className="club-container ">
         <div className="clubs">
           {data?.map((event: any, index: number) => {
             return (
@@ -44,7 +44,7 @@ function Event() {
                     rotateZ={-5}
                     className={`${
                       colors[index % colors.length]
-                    } bg-opacity-100`}
+                    } bg-opacity-100 `}
                   >
                     {/* <BackgroundGradientAnimation interactive = {true}> */}
                     <Link to={`/event/${event.nameLink}`}>
