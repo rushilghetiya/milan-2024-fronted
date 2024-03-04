@@ -1,6 +1,5 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { ProtectedRoutes } from "./features/authentication/ProtectedRoutes";
 // import DashBoard from "./pages/DashBoard";
 import Register from "./pages/Register";
 import { Toaster } from "@/components/ui/toaster";
@@ -23,7 +22,6 @@ import RotaractEventPage from "./components/Event/individualEvents/RotaractEvent
 import SocialEventPage from "./components/Event/individualEvents/SocialEventPage";
 import WomenEventPage from "./components/Event/individualEvents/WomenEventPage";
 import RubiksEventPage from "./components/Event/individualEvents/RubiksEventPage";
-import DashBoard from "./pages/DashBoard";
 import Header from "./components/Header/Header";
 
 const queryClient = new QueryClient({
@@ -41,9 +39,7 @@ function App() {
 			<Header/>
 					<div className="App">
 						<Routes>
-							<Route element={<ProtectedRoutes />}>
-								<Route path="/auth" element={<DashBoard />} />
-							</Route>
+							
 								<Route path="/" element={<Home />} />
 							<Route path="/event" element={<Event />} />
 							<Route path="/register" element={<Register />} />
