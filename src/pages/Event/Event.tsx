@@ -47,8 +47,8 @@ function Event() {
                   >
                     {/* <BackgroundGradientAnimation interactive = {true}> */}
                     <Link to={`/event/${event.nameLink}`}>
-                      <div key={index} className="club-box rounded-md">
-                        {/* <img src={event.bgImage} className="object-cover w-full h-full   "></img> */}
+                      <div key={index} className="club-box rounded-md" style={{backgroundImage: `url(${event.clubImage})`,backgroundSize: 'cover'}}>
+                        {/* <img src={event.clubImage} className="object-contain absolute"></img> */}
                         <div className="category-box rounded-md m-0">
                           <p className="text-white text-[poppins] font-extrabold capitalize  ">
                             #{event.name}

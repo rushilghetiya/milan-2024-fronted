@@ -1,3 +1,4 @@
+
 const data = [
   {
     id: 1,
@@ -6,6 +7,7 @@ const data = [
     nameLink: "music",
     // color: "#ffffff",
     bgImage: "#0d101c",
+    clubImage: "/clubImages/techteam_dsa_musicians_playing_on_a_street_illustrationhigh_det_e6f7abfc-c198-4d34-9545-dd5d2693d33a.webp",
     // bgImageMobile: require("../utils/images/categories/music/eventlistmbg-music.webp"),
     // bgGradientColor: {
     //   background:
@@ -466,6 +468,7 @@ const data = [
     nameLink: "dance",
     // color: '',
     bgImage: "#1e1208",
+    clubImage: "/clubImages/techteam_dsa_modern_dancers_dancing_on_a_street_illustrationhig_674196ee-3e72-4ea9-ac3f-c553e7593d5a.webp",
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
@@ -723,6 +726,7 @@ const data = [
     nameLink: "fashion",
     // color: '',
     bgImage: "#180c15",
+    clubImage: "/clubImages/techteam_dsa_fashion_models_walking_down_a_runway_street_perfor_ad0f8de1-e027-4cd1-9568-1f652d1f2652.webp",
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
@@ -1038,6 +1042,7 @@ const data = [
     nameLink: "moviesanddramatics",
     // color: "#001709",
     bgImage: "#021309",
+    clubImage: "/clubImages/techteam_dsa_actors_on_a_stage_inside_a_theatre_illustrationhig_1cbb796f-0047-4dc8-9b65-5f4ba70586e8.webp",
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
@@ -1533,6 +1538,7 @@ const data = [
     nameLink: "literary",
     // color: '',
     bgImage: "#110313",
+    clubImage: "/clubImages/techteam_dsa_open_book_with_poems_on_a_table_inside_a_library_f_72fca714-732e-42d3-9b4d-baf0e4cc6f8a.webp",
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
@@ -1978,6 +1984,7 @@ const data = [
     nameLink: "creativearts",
     // color: '',
     bgImage: "#161626",
+    clubImage: "/clubImages/techteam_dsa_painter_painting_on_a_canvas_of_a_street_illustrat_abda5274-d6fb-4160-b367-96d1d9bad65d.webp",
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
@@ -2388,6 +2395,7 @@ const data = [
     nameLink: "quiz",
     // color: '',
     bgImage: "#1d0718",
+    clubImage: "/clubImages/techteam_dsa_quiz_game_show_illustration_high_detail_3771b45c-1df4-4068-8dc5-d66cf5c8aaf8.webp",
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
@@ -2571,6 +2579,7 @@ const data = [
     nameLink: "gaming",
     // color: '',
     bgImage: "#0d0b04",
+    clubImage: "/clubImages/techteam_dsa_esports_gaming_tournament_illustration_high_detail_85bb1c2c-ed2b-43b8-b062-38cecdaea106.webp",
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
@@ -3032,6 +3041,7 @@ const data = [
     nameLink: "selfdefence",
     // color: '',
     bgImage: "#1b0702",
+    clubImage: "/clubImages/techteam_dsa_MMA_fight_in_boxing_ring_illustration_high_detail_9d61383f-0cb3-4a92-8027-8b39417be9f0.webp",
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
@@ -3305,6 +3315,7 @@ const data = [
     nameLink: "astrophilia",
     // color: '',
     bgImage: "#0e051c",
+    clubImage: "/clubImages/techteam_dsa_astrophiliawatching_the_stars_through_telescoe_ill_a111e7ae-4da1-4d14-9dc1-ab73f818035a.webp",
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
@@ -3524,6 +3535,7 @@ const data = [
     nameLink: "sports",
     // color: '',
     bgImage: "#160108",
+    clubImage: "/clubImages/techteam_dsa_playing_football_on_the_streets_of_brazildaysports_8738dc69-6ed8-4b1e-9325-5337bac014de.webp",
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
@@ -3843,6 +3855,7 @@ const data = [
     nameLink: "photography",
     // color: '',
     bgImage: "#02071b",
+    clubImage: "/clubImages/techteam_dsa_photographer_taking_photo_of_city_illustration_hig_795ddf5d-006a-4169-bcc1-37ddcb2d3e5e.webp",
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
@@ -4102,6 +4115,7 @@ const data = [
     nameLink: "rotaract",
     // color: '',
     bgImage: "#20001d",
+    clubImage: "/clubImages/techteam_dsa_rotaract_club_illustration_high_detail_0eaecded-66cd-4841-bed3-ef8356d76917.webp",
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
@@ -4312,6 +4326,7 @@ const data = [
     nameLink: "social",
     // color: '',
     bgImage: "#200209",
+    clubImage: "/clubImages/techteam_dsa_social_activities_like_blood_donation_and_pet_adop_be62cdc8-2b90-4a6b-bc5f-0678ff69c3ed.webp",
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
@@ -4448,6 +4463,7 @@ const data = [
     nameLink: "womenempowerment",
     // color: '',
     bgImage: "#070717",
+    clubImage: "/clubImages/techteam_dsa_women_empowerement_illustration_high_detail_124312d3-bee0-483c-84bb-b678057ea7a9.webp",
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
@@ -4577,6 +4593,7 @@ const data = [
     nameLink: "rubiks",
     // color: '',
     bgImage: "#0f0900",
+    clubImage: "/clubImages/techteam_dsa_colossal_rubiks_cube_in_the_middle_of_the_city_ill_8426cca3-33eb-49f5-aead-d87bd159f627.webp",
     // bgImageMobile: require(''),
     // bgGradientColor: {
     //   background: '',
