@@ -41,14 +41,14 @@ const Footer = () => {
           
           </ul>
         </div>
-        <div className="footerItem2">
+        {/* <div className="footerItem2">
           <ul>
           
             <li>
               <Link to="/faq">FAQs</Link>
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
       <div className="footerContainer container3">
         <ul className="footerSocial">
