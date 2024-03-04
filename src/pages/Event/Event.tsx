@@ -4,6 +4,7 @@ import data from "../../DataList/EventList";
 import { CardBody, CardContainer, CardItem } from "../../components/ui/3d-card";
 // import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom";
+import Footer from "@/components/Footer/Footer";
 
 
 function Event() {
@@ -64,6 +65,8 @@ function Event() {
           })}
         </div>
       </div>
+      <Footer/>
+      
     </div>
   );
 }
