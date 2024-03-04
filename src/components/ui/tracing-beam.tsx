@@ -25,7 +25,7 @@ export const TracingBeam = ({
 
   // track velocity of scroll to increase or decrease distance between svg gradient y coordinates.
   const scrollYProgressVelocity = useVelocity(scrollYProgress);
-  const [velo, setVelocity] = React.useState(0);
+  const [, setVelocity] = React.useState(0);
 
   const contentRef = useRef<HTMLDivElement>(null);
 

@@ -1,21 +1,16 @@
 /*eslint-disable*/
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import "./Header.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../../assets/Images/XXIV.webp";
-import useUser from "@/features/authentication/useUser";
-import useLogout from "@/features/authentication/useLogout";
-import { useQueryClient } from "@tanstack/react-query";
+
 import { Link } from "react-router-dom";
 
 const Header = () => {
 	const [click, setClick] = useState(false);
-	const [isTicketValid, setTicket] = useState(false);
 	const handleClick = () => setClick(!click);
 
-	const { logout, logoutLoading } = useLogout();
 
-	const queryClient = useQueryClient();
 
 	const [isNavbarHidden, setIsNavbarHidden] = useState(false);
 
@@ -35,17 +30,6 @@ const Header = () => {
 		};
 	}, []);
 
-	function handleGoogleLogin() {
-		window.open(
-			`${import.meta.env.VITE_API_URL}/users/auth/google`,
-			"_self",
-			"width-500, height=600"
-		);
-	}
-
-	function handleLogout() {
-		logout();
-	}
 
 	// const { user, isAuthenticated } = useUser();
 
